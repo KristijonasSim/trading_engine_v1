@@ -1,0 +1,78 @@
+{
+  "BtcThirtyDayMomentum": {
+    "source_title": "Risk-Managed Crypto Momentum",
+    "adapter_file": "crossref_10-2139-ssrn-7115459_crypto-spot.md"
+  },
+  "AiHypothesis934d6e7eec": {
+    "source_title": "Crypto Momentum Strategy",
+    "adapter_file": "arxiv_2108-11921v1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "ema_rsi_momentum_1d"
+  },
+  "AiHypothesis4b5bd44638": {
+    "source_title": "Crypto Time-Series Momentum",
+    "adapter_file": "arxiv_2602-11708v1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "ema_rsi_momentum_4h"
+  },
+  "AiHypothesis4f9224a81c": {
+    "source_title": "Automated Strategy Discovery in Crypto Perpetuals via Dynamic Factor Ensembles and Auditable Evaluation",
+    "adapter_file": "crossref_10-2139-ssrn-6071928_crypto-futures.md",
+    "hypothesis": true,
+    "family": "factor_momentum_1h"
+  },
+  "AiHypothesis0b360da1b0": {
+    "source_title": "allenfrostline Momentum",
+    "adapter_file": "github_allenfrostline-cryptonews_crypto-spot.md",
+    "hypothesis": true,
+    "family": "ema_rsi_momentum_1h"
+  },
+  "AiHypothesis38274e8e38": {
+    "source_title": "LeviathanLevi Momentum",
+    "adapter_file": "github_leviathanlevi-binanceus-crypto-trading-bot_crypto-spot.md",
+    "hypothesis": true,
+    "family": "crossover_momentum_1h"
+  },
+  "AiHypothesis8626759f55": {
+    "source_title": "ryaniamfs Momentum",
+    "adapter_file": "github_ryaniamfs-crypto-stat-arb_crypto-futures.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesis0db0917b6c": {
+    "source_title": "santoshlite Momentum",
+    "adapter_file": "github_santoshlite-momentum-strategy-crypto_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_momentum_1h"
+  },
+  "AiHypothesis4702b4251f": {
+    "source_title": "SashRajj Momentum",
+    "adapter_file": "github_sashrajj-momentum-based-crypto-trading_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_1h"
+  },
+  "AiHypothesis8222f0d297": {
+    "source_title": "yeshunyi Momentum",
+    "adapter_file": "github_yeshunyi-crypto-momentum-strategy_crypto-spot.md",
+    "hypothesis": true,
+    "family": "slow_momentum_1h"
+  },
+  "AiHypothesisa4d1676ef6": {
+    "source_title": "mefai-dev Momentum",
+    "adapter_file": "github_mefai-dev-mefai-autotrade_crypto-spot.md",
+    "hypothesis": true,
+    "family": "ema_rsi_momentum_5m"
+  },
+  "AiHypothesis06c4e1f3ce": {
+    "source_title": "An1g Momentum",
+    "adapter_file": "github_an1g-crypto-portfolio-backtester_crypto-spot.md",
+    "hypothesis": true,
+    "family": "balanced_momentum_1h"
+  },
+  "AiHypothesis3377b9f83c": {
+    "source_title": "Clementinemaster Momentum",
+    "adapter_file": "github_clementinemaster-forex-prime-trx-mt4-strategy_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_momentum_5m"
+  }
+}

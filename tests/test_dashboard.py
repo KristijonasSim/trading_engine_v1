@@ -36,6 +36,16 @@ class DashboardTests(unittest.TestCase):
         self.assertEqual(display_title(record), "SashRajj Momentum")
         self.assertEqual(market_type(record), "crypto")
 
+    def test_stock_momentum_title_is_not_mislabelled_as_crypto(self):
+        record = {
+            "source": "crossref",
+            "id": "stock-momentum",
+            "title": "Comparison of Cross-sectional Momentum Strategy and Time-Series Momentum Strategy",
+            "summary": "A stock investing study.",
+        }
+        self.assertEqual(display_title(record), record["title"])
+        self.assertEqual(market_type(record), "stocks")
+
     def test_futures_is_shown_before_crypto(self):
         self.assertEqual(market_type({"title": "Crypto perpetual futures trend"}), "futures")
 
@@ -63,6 +73,51 @@ class DashboardTests(unittest.TestCase):
             (research / "sources.json").write_text(json.dumps(payload), encoding="utf-8")
             delete_source(root, "github", "ignore-me")
             self.assertEqual(dashboard_data(root)["research"]["unique_sources"], 0)
+
+    def test_actionable_ideas_come_before_tested_and_out_of_scope_sources(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            research = root / "data" / "research"
+            research.mkdir(parents=True)
+            payload = {
+                "created_at": "2026-08-17T10:00:00+00:00",
+                "records": [
+                    {"source": "github", "id": "tested", "title": "Tested crypto strategy", "url": "https://example.test/tested"},
+                    {"source": "github", "id": "active", "title": "Active crypto strategy", "url": "https://example.test/active"},
+                    {"source": "arxiv", "id": "other", "title": "A recommendation paper", "url": "https://example.test/other"},
+                ],
+            }
+            (research / "sources.json").write_text(json.dumps(payload), encoding="utf-8")
+            adapters = root / "strategy_adapters"
+            adapters.mkdir()
+            (adapters / "tested.md").write_text(
+                "# Strategy adapter: Tested\n- Link: https://example.test/tested\n- Status: `ai_hypothesis`\n",
+                encoding="utf-8",
+            )
+            ids = [item["id"] for item in dashboard_data(root)["research"]["records"]]
+            self.assertEqual(ids, ["active", "tested", "other"])
+
+    def test_stock_and_forex_ideas_are_actionable_for_btc_translation(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            research = root / "data" / "research"
+            research.mkdir(parents=True)
+            payload = {"records": [
+                {"source": "crossref", "id": "other", "title": "A recommendation paper"},
+                {"source": "crossref", "id": "stock", "title": "A stock momentum trading strategy"},
+                {"source": "crossref", "id": "forex", "title": "A forex trend trading strategy"},
+            ]}
+            (research / "sources.json").write_text(json.dumps(payload), encoding="utf-8")
+            ids = [item["id"] for item in dashboard_data(root)["research"]["records"]]
+            self.assertEqual(ids, ["stock", "forex", "other"])
+
+    def test_unspecified_momentum_strategy_is_a_general_market_idea(self):
+        record = {"title": "The Lazy Man's Momentum Strategy"}
+        self.assertEqual(market_type(record), "general")
+
+    def test_price_action_and_technical_analysis_are_general_market_ideas(self):
+        self.assertEqual(market_type({"title": "Algorithmic trading using price action strategies"}), "general")
+        self.assertEqual(market_type({"title": "Automating technical analysis"}), "general")
 
 
 if __name__ == "__main__":

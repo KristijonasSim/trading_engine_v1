@@ -24,14 +24,14 @@
         <a class="engine active engine-link" href="/adapter.html">
           <p class="label">02 · STRATEGY ADAPTER</p>
           <h2 id="card-total">0 adapter drafts</h2>
-          <p>Adapt a source to crypto spot or futures.</p>
+          <p>Translate crypto, stocks, forex, or futures ideas to BTC tests.</p>
           <span class="badge">Ready</span>
         </a>
         <a class="engine engine-link" href="/testing.html">
           <p class="label">03 · TESTING ENGINE</p>
           <h2 id="test-total">0 test runs</h2>
-          <p id="testing-copy">Not built yet. It cannot run strategies.</p>
-          <span class="badge muted">Locked</span>
+          <p id="testing-copy">Freqtrade test pipeline.</p>
+          <span class="badge">Ready</span>
         </a>
         <a class="engine engine-link" href="/bot.html">
           <p class="label">04 · BOT ENGINE</p>
@@ -60,15 +60,10 @@
         <div id="source-counts" class="source-counts"></div>
       </section>
       <section class="panel">
-        <div class="section-heading"><div><p class="label">STRATEGY ADAPTER</p><h2>Manual drafts</h2></div><p class="small">Drafts are blocked from testing until complete.</p></div>
-        <div id="adapters" class="cards"></div>
-      </section>
-
-      <section class="panel">
         <div class="section-heading">
           <div>
             <p class="label">SAVED SOURCE IDEAS</p>
-            <h2>Review before testing</h2>
+            <h2>Saved source ideas</h2>
           </div>
           <label class="filter">Source
             <select id="source-filter">
@@ -85,12 +80,13 @@
               <option value="stocks">Stocks</option>
               <option value="futures">Futures</option>
               <option value="forex">Forex</option>
+              <option value="general">General strategy</option>
               <option value="other">Other</option>
             </select>
           </label>
         </div>
         <p id="filter-status" class="small">Crypto-only sources. Shortcuts: ORB = Open Range Breakout.</p>
-        <div id="records" class="records"></div>
+        <div class="table-wrap"><table class="compact-table"><thead><tr><th>#</th><th>Source</th><th>Market</th><th>Strategy idea</th><th>Harvested</th><th>Action</th></tr></thead><tbody id="records"></tbody></table></div>
       </section>
 
     </main>

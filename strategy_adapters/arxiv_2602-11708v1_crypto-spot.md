@@ -2,9 +2,9 @@
 
 ## Status
 
-- Status: `draft`
+- Status: `ai_hypothesis`
 - Target: `crypto-spot`
-- Testing handoff: `blocked`
+- Testing handoff: `ready`
 
 ## Original source
 
@@ -34,3 +34,7 @@
 - Reviewer:
 - Decision: `needs work`
 - Ready for Testing Engine: `no`
+
+## Automation
+
+- Result: Skipped automatically: entry, exit, stop-loss, or position-size rules are not complete enough to create honest test code.

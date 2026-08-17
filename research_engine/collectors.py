@@ -24,6 +24,19 @@ MARKET_WORDS = {
     "forex": ("forex", "foreign exchange", "currency pair", " fx "),
 }
 FINANCE_WORDS = ("trading", "trade", "backtest", "investment", "portfolio", "market", "finance", "financial", "exchange")
+GENERAL_STRATEGY_WORDS = (
+    "trading strategy",
+    "momentum",
+    "mean reversion",
+    "breakout",
+    "arbitrage",
+    "trend following",
+    "trend-following",
+    "price action",
+    "technical analysis",
+    "asset price",
+    "trading range",
+)
 
 
 def expand_query(query: str) -> str:
@@ -37,6 +50,8 @@ def classify_market(record: dict[str, Any]) -> str:
     for market in ("futures", "crypto", "forex", "stocks"):
         if any(word in text for word in MARKET_WORDS[market]):
             return market
+    if any(word in text for word in GENERAL_STRATEGY_WORDS):
+        return "general"
     return "other"
 
 

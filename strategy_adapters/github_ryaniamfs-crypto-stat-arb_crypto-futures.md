@@ -2,9 +2,9 @@
 
 ## Status
 
-- Status: `draft`
+- Status: `ai_hypothesis`
 - Target: `crypto-futures`
-- Testing handoff: `blocked`
+- Testing handoff: `ready`
 
 ## Original source
 
@@ -34,3 +34,7 @@
 - Reviewer:
 - Decision: `needs work`
 - Ready for Testing Engine: `no`
+
+## Automation
+
+- Result: AI proposed mean_reversion rules: EMA 8/34, RSI entry > 48, exit < 52, stop-loss -5%, fixed $100 position, 1h. This is an independent test hypothesis, not a claim about the original author's exact rules.

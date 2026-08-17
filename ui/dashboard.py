@@ -12,6 +12,7 @@ from typing import Any
 from research_engine.collectors import classify_market
 from strategy_adapter.adapters import write_adapter
 from strategy_adapter.queue import load as load_queue
+from testing_engine.policy import candidate_timeframes, public_policy
 
 
 def deleted_sources_path(project_root: Path) -> Path:
@@ -73,6 +74,7 @@ def read_records(project_root: Path) -> list[dict[str, Any]]:
 def display_title(record: dict[str, Any]) -> str:
     """Make a short title while keeping the main strategy idea."""
     text = f"{record.get('title', '')} {record.get('summary', '')}".lower()
+    is_crypto_market = classify_market(record) in {"crypto", "futures"}
     if record.get("source") == "github":
         owner = record.get("id", "source").split("/", 1)[0]
         if "momentum" in text:
@@ -82,11 +84,11 @@ def display_title(record: dict[str, Any]) -> str:
         if "trend" in text:
             return f"{owner} Trend"
         return owner
-    if "time-series momentum" in text:
+    if "time-series momentum" in text and is_crypto_market:
         return "Risk-Managed Crypto Momentum" if "risk-managed" in text else "Crypto Time-Series Momentum"
-    if "trend-following" in text:
+    if "trend-following" in text and is_crypto_market:
         return "Adaptive Crypto Trend-Following" if "adaptive" in text else "Crypto Trend-Following"
-    if "momentum" in text:
+    if "momentum" in text and is_crypto_market:
         return "Crypto Momentum Strategy"
     return record.get("title") or record.get("id") or "Untitled source"
 
@@ -125,8 +127,69 @@ def read_adapters(project_root: Path) -> list[dict[str, str]]:
         status = re.search(r"^- Status: `([^`]+)`", content, re.MULTILINE)
         source = re.search(r"^- Link: (.+)$", content, re.MULTILINE)
         market = re.search(r"^- Source market: `([^`]+)`", content, re.MULTILINE)
-        adapters.append({"file": path.name, "title": title.group(1) if title else path.stem, "target": target.group(1) if target else "unknown", "status": status.group(1) if status else "draft", "source_link": source.group(1) if source else "", "source_market": market.group(1) if market else "unknown"})
+        note = re.search(r"^- Result: (.+)$", content, re.MULTILINE)
+        adapters.append({"file": path.name, "title": title.group(1) if title else path.stem, "target": target.group(1) if target else "unknown", "status": status.group(1) if status else "draft", "source_link": source.group(1) if source else "", "source_market": market.group(1) if market else "unknown", "note": note.group(1) if note else ""})
     return adapters
+
+
+def read_testing_strategies(project_root: Path, reports: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Only code that can be tested belongs in the test queue."""
+    latest_reports: dict[tuple[str, str], dict[str, Any]] = {}
+    for report in sorted(reports, key=lambda item: item.get("created_at", "")):
+        if report.get("strategy"):
+            key = (str(report["strategy"]), str(report.get("timeframe") or ""))
+            latest_reports[key] = report
+    try:
+        registry = json.loads((project_root / "testing_engine" / "registry.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        registry = {}
+    runnable = []
+    for file in sorted((project_root / "testing_engine" / "strategies").glob("*.py")):
+        if file.name == "__init__.py":
+            continue
+        try:
+            config = json.loads((project_root / "testing_engine" / "configs" / f"{file.stem}.json").read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            config = {}
+        if registry.get(file.stem, {}).get("duplicate_of"):
+            continue
+        suggested_timeframe = config.get("timeframe", "1h")
+        comparison_timeframes = candidate_timeframes(suggested_timeframe)
+        legacy_report = latest_reports.get((file.stem, ""), {})
+        timeframe_reports = {
+            timeframe: latest_reports.get(
+                (file.stem, timeframe),
+                legacy_report if timeframe == suggested_timeframe else {},
+            )
+            for timeframe in comparison_timeframes
+        }
+        terminal = {"baseline_passed", "baseline_failed", "rejected", "nautilus_queue"}
+        completed = [report for report in timeframe_reports.values() if report.get("status") in terminal]
+        passed = [report for report in completed if report.get("status") == "baseline_passed" and report.get("metrics")]
+        def rank(report: dict[str, Any]) -> float:
+            try:
+                return float(report.get("metrics", {}).get("score", "-1"))
+            except (TypeError, ValueError):
+                return -1
+        best = max(passed or completed or list(timeframe_reports.values()), key=rank, default={})
+        if len(completed) == len(comparison_timeframes):
+            status = "tested"
+        elif any(report.get("status") == "running" for report in timeframe_reports.values()):
+            status = "running"
+        else:
+            status = "ready_for_comparison"
+        runnable.append({
+            "name": registry.get(file.stem, {}).get("source_title", file.stem),
+            "code_name": file.stem,
+            "kind": "AI hypothesis" if registry.get(file.stem, {}).get("hypothesis") else "Source rules",
+            "timeframe": best.get("timeframe") or suggested_timeframe,
+            "comparison_timeframes": list(comparison_timeframes),
+            "completed_timeframes": len(completed),
+            "status": status,
+            "metrics": best.get("metrics", {}),
+            "timerange": report.get("timerange", public_policy()["timerange"]),
+        })
+    return runnable
 
 
 def create_adapter(project_root: Path, source: str, record_id: str, target: str) -> Path | None:
@@ -145,23 +208,57 @@ def dashboard_data(project_root: Path) -> dict[str, Any]:
         record["market"] = market_type(record)
     cards = read_cards(project_root)
     adapters = read_adapters(project_root)
+    pending_adapters = [item for item in adapters if item["status"] not in {"adapted", "ai_hypothesis", "duplicate_hypothesis"}]
+    archived_adapters = [item for item in adapters if item["status"] == "duplicate_hypothesis"]
+    source_states = {item["source_link"]: item["status"] for item in adapters if item["source_link"]}
+
+    # Keep the Research inbox useful: fresh, actionable market ideas first.
+    # Stock, forex and futures logic can be translated into BTC hypotheses;
+    # only genuinely non-market material stays below the active inbox.
+    completed_states = {"adapted", "ai_hypothesis", "duplicate_hypothesis"}
+    records.sort(key=lambda item: item["_sort_key"], reverse=True)
+    records.sort(
+        key=lambda item: 0
+        if item["market"] in {"crypto", "futures", "stocks", "forex", "general"}
+        and source_states.get(item.get("url", "")) not in completed_states
+        else 1
+    )
     queue = load_queue(project_root)
     source_counts = Counter(record["source"] for record in records)
-    testing_reports = list((project_root / "data" / "testing").glob("*.json"))
+    testing_reports = []
+    for path in (project_root / "data" / "testing" / "history").glob("*.json"):
+        try:
+            testing_reports.append(json.loads(path.read_text(encoding="utf-8")))
+        except (OSError, json.JSONDecodeError):
+            continue
+    jobs = []
+    for path in (project_root / "data" / "testing" / "jobs").glob("*.json"):
+        try:
+            jobs.append(json.loads(path.read_text(encoding="utf-8")))
+        except (OSError, json.JSONDecodeError):
+            continue
     return {
         "research": {
             "state": "ready",
             "unique_sources": len(records),
             "source_counts": dict(sorted(source_counts.items())),
-            "records": records[:25],
+            "records": records,
+            "source_states": source_states,
         },
-        "adapter": {"state": "paused", "drafts": len(adapters), "queue": queue},
-        "testing": {"state": "not built", "strategy_cards": len(cards), "reports": len(testing_reports)},
+        "adapter": {"state": "ready", "drafts": len(pending_adapters), "archived": len(archived_adapters), "queue": queue},
+        "testing": {
+            "state": "ready", "strategy_cards": len(cards), "reports": len(testing_reports),
+            "history": sorted(testing_reports, key=lambda item: item.get("created_at", ""), reverse=True)[:20],
+            "policy": public_policy(), "strategies": read_testing_strategies(project_root, testing_reports),
+            "awaiting_adapter": len(pending_adapters),
+            "jobs": sorted(jobs, key=lambda item: item.get("updated_at", ""), reverse=True),
+        },
         "bot": {
             "state": "not built",
             "live_strategies": 0,
             "open_positions": 0,
         },
         "strategy_cards": cards,
-        "adapters": adapters,
+        "adapters": pending_adapters,
+        "archived_adapters": archived_adapters,
     }

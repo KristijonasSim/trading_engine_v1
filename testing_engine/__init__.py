@@ -1,0 +1,1 @@
+"""Controlled Freqtrade testing pipeline."""

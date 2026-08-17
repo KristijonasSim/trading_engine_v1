@@ -2,9 +2,9 @@
 
 ## Status
 
-- Status: `draft`
+- Status: `ai_hypothesis`
 - Target: `crypto-spot`
-- Testing handoff: `blocked`
+- Testing handoff: `ready`
 
 ## Original source
 
@@ -34,3 +34,7 @@
 - Reviewer:
 - Decision: `needs work`
 - Ready for Testing Engine: `no`
+
+## Automation
+
+- Result: AI proposed crossover_momentum rules: EMA 15/45, RSI entry > 54, exit < 46, stop-loss -8%, fixed $100 position, 1h. This is an independent test hypothesis, not a claim about the original author's exact rules.

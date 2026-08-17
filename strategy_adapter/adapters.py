@@ -53,5 +53,7 @@ def make_adapter(record: dict[str, Any], target: str) -> str:
 def write_adapter(record: dict[str, Any], target: str, output_dir: Path) -> Path:
     output_dir.mkdir(parents=True, exist_ok=True)
     path = output_dir / f"{safe_filename(record['source'])}_{safe_filename(record['id'])}_{target}.md"
+    if path.exists():
+        return path
     path.write_text(make_adapter(record, target), encoding="utf-8")
     return path

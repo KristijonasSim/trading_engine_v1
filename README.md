@@ -5,3 +5,5 @@ See [ROADMAP.md](ROADMAP.md) for the planned automatic-trading workflow.
 Research Engine v1 is in [research_engine/README.md](research_engine/README.md).
 
 Run the local dashboard with `python3 -m ui`. See [ui/README.md](ui/README.md).
+
+Testing Engine decision: [TESTING_SUITE_DECISION.md](TESTING_SUITE_DECISION.md).

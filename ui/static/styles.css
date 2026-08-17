@@ -28,6 +28,7 @@ button { cursor: pointer; color: #061614; background: #6ce5cc; border-color: #6c
 button:disabled { opacity: .6; cursor: wait; }
 button.secondary { background: transparent; border-color: #53666a; color: #cde2df; padding: 7px 10px; margin-top: 10px; }
 button.danger { background: transparent; border-color: #8d4a4f; color: #ffbbc0; padding: 7px 10px; margin-top: 10px; }
+button.danger.small-button { padding: 5px 8px; margin: 0; }
 .message { min-height: 24px; color: #83decf; }
 .source-counts { display: flex; gap: 8px; flex-wrap: wrap; }
 .records { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
@@ -42,6 +43,21 @@ button.danger { background: transparent; border-color: #8d4a4f; color: #ffbbc0; 
 .market.forex { background: #235a86; color: #b9e8ff; }
 .market.other { background: #3a4346; color: #d0d8da; }
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; min-width: 760px; }
+th, td { padding: 12px 10px; text-align: left; border-bottom: 1px solid #2d383b; font-size: .9rem; }
+th { color: #8fa0a6; font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; }
+.compact-table { min-width: 700px; }
+.compact-table th, .compact-table td { padding: 7px 8px; font-size: .82rem; }
+.compact-table th { font-size: .68rem; }
+.compact-table .source-link { margin: 0; font-size: .82rem; }
+.compact-table td:last-child { min-width: 175px; white-space: nowrap; }
+button.small-button { padding: 5px 8px; font-size: .78rem; margin: 0 4px 0 0; }
+th.sortable { cursor: pointer; user-select: none; }
+th.sortable:hover { color: #6ce5cc; text-decoration: underline; text-underline-offset: 4px; }
+.test-button { padding: 7px 10px; }
+.test-button:disabled { background: #30393c; border-color: #30393c; color: #bbc4c6; }
+.console { max-height: 360px; overflow: auto; margin: 14px 0 0; padding: 14px; border-radius: 10px; background: #0c1012; border: 1px solid #2d383b; color: #bcece3; font: .8rem/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; white-space: pre-wrap; }
 .empty { margin: 0; padding: 16px; border: 1px dashed #3a484b; border-radius: 12px; }
 .back, .source-link { color: #6ce5cc; text-decoration: none; font-weight: 700; }
 .back { display: inline-block; margin-top: 8px; }

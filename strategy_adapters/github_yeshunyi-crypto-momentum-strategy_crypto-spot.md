@@ -2,9 +2,9 @@
 
 ## Status
 
-- Status: `draft`
+- Status: `ai_hypothesis`
 - Target: `crypto-spot`
-- Testing handoff: `blocked`
+- Testing handoff: `ready`
 
 ## Original source
 
@@ -34,3 +34,7 @@
 - Reviewer:
 - Decision: `needs work`
 - Ready for Testing Engine: `no`
+
+## Automation
+
+- Result: AI proposed slow_momentum rules: EMA 20/60, RSI entry > 56, exit < 44, stop-loss -10%, fixed $100 position, 1h. This is an independent test hypothesis, not a claim about the original author's exact rules.

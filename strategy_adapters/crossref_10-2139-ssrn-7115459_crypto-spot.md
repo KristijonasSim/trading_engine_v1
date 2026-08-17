@@ -2,9 +2,9 @@
 
 ## Status
 
-- Status: `draft`
+- Status: `adapted`
 - Target: `crypto-spot`
-- Testing handoff: `blocked`
+- Testing handoff: `ready`
 
 ## Original source
 
@@ -34,3 +34,7 @@
 - Reviewer:
 - Decision: `needs work`
 - Ready for Testing Engine: `no`
+
+## Automation
+
+- Result: Created BtcThirtyDayMomentum: BTC/USDT 30-day long/cash momentum on 1d candles.

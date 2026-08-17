@@ -2,9 +2,9 @@
 
 ## Status
 
-- Status: `draft`
+- Status: `ai_hypothesis`
 - Target: `crypto-futures`
-- Testing handoff: `blocked`
+- Testing handoff: `ready`
 
 ## Original source
 
@@ -34,3 +34,7 @@
 - Reviewer:
 - Decision: `needs work`
 - Ready for Testing Engine: `no`
+
+## Automation
+
+- Result: AI proposed factor_momentum rules: EMA 13/55, RSI entry > 52, exit < 47, stop-loss -6%, fixed $100 position, 1h. This is an independent test hypothesis, not a claim about the original author's exact rules.
