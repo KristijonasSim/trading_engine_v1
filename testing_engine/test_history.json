@@ -1,0 +1,5068 @@
+{
+  "version": 1,
+  "description": "Portable latest Freqtrade result per strategy and timeframe.",
+  "reports": [
+    {
+      "strategy": "AiHypothesis2c0c743805",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "1.94",
+        "cagr": "1.50%",
+        "max_drawdown": "1.79%",
+        "trades_per_day": "0.02",
+        "score": "6.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:23:54.862782+00:00"
+    },
+    {
+      "strategy": "AiHypothesis5d96521ddd",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "4.51",
+        "cagr": "3.71%",
+        "max_drawdown": "1.56%",
+        "trades_per_day": "0.01",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:23:53.250380+00:00"
+    },
+    {
+      "strategy": "AiHypothesis43932fa899",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "1.79",
+        "cagr": "2.13%",
+        "max_drawdown": "2.54%",
+        "trades_per_day": "0.02",
+        "score": "6.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:23:53.069528+00:00"
+    },
+    {
+      "strategy": "AiHypothesis2c0c743805",
+      "status": "baseline_passed",
+      "note": "5                                      \u2502",
+      "metrics": {
+        "pf": "1.30",
+        "cagr": "0.93%",
+        "max_drawdown": "2.87%",
+        "trades_per_day": "0.07",
+        "score": "4.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:23:49.126092+00:00"
+    },
+    {
+      "strategy": "AiHypothesis5d96521ddd",
+      "status": "baseline_passed",
+      "note": "6                                      \u2502",
+      "metrics": {
+        "pf": "1.37",
+        "cagr": "1.64%",
+        "max_drawdown": "2.87%",
+        "trades_per_day": "0.06",
+        "score": "4.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:23:47.331359+00:00"
+    },
+    {
+      "strategy": "AiHypothesis43932fa899",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.10",
+        "cagr": "0.63%",
+        "max_drawdown": "5.42%",
+        "trades_per_day": "0.14",
+        "score": "4.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:23:47.132531+00:00"
+    },
+    {
+      "strategy": "AiHypothesis87ddb0d4e4",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.69",
+        "cagr": "3.46%",
+        "max_drawdown": "2.67%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:23:46.548511+00:00"
+    },
+    {
+      "strategy": "AiHypothesis2c0c743805",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.79                                     \u2502",
+      "metrics": {
+        "pf": "0.79",
+        "cagr": "-1.74%",
+        "max_drawdown": "8.13%",
+        "trades_per_day": "0.29",
+        "score": "3.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:23:44.195204+00:00"
+    },
+    {
+      "strategy": "AiHypothesis5d96521ddd",
+      "status": "baseline_passed",
+      "note": "      \u2502 -0.27                                     \u2502",
+      "metrics": {
+        "pf": "0.91",
+        "cagr": "-0.89%",
+        "max_drawdown": "9.00%",
+        "trades_per_day": "0.22",
+        "score": "3.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:23:40.931556+00:00"
+    },
+    {
+      "strategy": "AiHypothesis43932fa899",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.99                                     \u2502",
+      "metrics": {
+        "pf": "0.79",
+        "cagr": "-2.92%",
+        "max_drawdown": "11.09%",
+        "trades_per_day": "0.55",
+        "score": "3.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:23:40.543154+00:00"
+    },
+    {
+      "strategy": "AiHypothesis87ddb0d4e4",
+      "status": "baseline_passed",
+      "note": "6                                      \u2502",
+      "metrics": {
+        "pf": "1.34",
+        "cagr": "1.84%",
+        "max_drawdown": "2.81%",
+        "trades_per_day": "0.13",
+        "score": "5.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:23:40.419104+00:00"
+    },
+    {
+      "strategy": "AiHypothesis25bc6e83a2",
+      "status": "baseline_passed",
+      "note": "\u2502 -2.87                                     \u2502",
+      "metrics": {
+        "pf": "0.68",
+        "cagr": "-9.35%",
+        "max_drawdown": "25.50%",
+        "trades_per_day": "1.33",
+        "score": "2.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:23:36.377977+00:00"
+    },
+    {
+      "strategy": "AiHypothesis25bc6e83a2",
+      "status": "baseline_failed",
+      "note": "2026-08-17 13:23:22,549 - freqtrade - INFO - freqtrade 2026.7",
+      "metrics": {},
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:23:25.327587+00:00"
+    },
+    {
+      "strategy": "AiHypothesis228efda595",
+      "status": "baseline_passed",
+      "note": "\u2502 -5.75                                     \u2502",
+      "metrics": {
+        "pf": "0.49",
+        "cagr": "-11.64%",
+        "max_drawdown": "31.23%",
+        "trades_per_day": "1.4",
+        "score": "2.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:23:21.869205+00:00"
+    },
+    {
+      "strategy": "AiHypothesis228efda595",
+      "status": "baseline_passed",
+      "note": "\u2502 -11.99                                    \u2502",
+      "metrics": {
+        "pf": "0.30",
+        "cagr": "-53.44%",
+        "max_drawdown": "89.90%",
+        "trades_per_day": "4.09",
+        "score": "1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:23:11.291202+00:00"
+    },
+    {
+      "strategy": "AiHypothesis87ddb0d4e4",
+      "status": "baseline_passed",
+      "note": "\u2502 -1.32                                     \u2502",
+      "metrics": {
+        "pf": "0.75",
+        "cagr": "-4.17%",
+        "max_drawdown": "12.76%",
+        "trades_per_day": "0.63",
+        "score": "3.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:23:06.638418+00:00"
+    },
+    {
+      "strategy": "AiHypothesis1d7677be07",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "2.58",
+        "cagr": "3.13%",
+        "max_drawdown": "2.35%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:22:59.867617+00:00"
+    },
+    {
+      "strategy": "AiHypothesis1d7677be07",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.42",
+        "cagr": "1.85%",
+        "max_drawdown": "2.83%",
+        "trades_per_day": "0.08",
+        "score": "5.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:22:53.857022+00:00"
+    },
+    {
+      "strategy": "AiHypothesis1d7677be07",
+      "status": "baseline_passed",
+      "note": "3                                      \u2502",
+      "metrics": {
+        "pf": "1.00",
+        "cagr": "0.04%",
+        "max_drawdown": "5.48%",
+        "trades_per_day": "0.3",
+        "score": "4.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:22:47.392015+00:00"
+    },
+    {
+      "strategy": "AiHypothesis1bb826fbaa",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.06",
+        "cagr": "1.59%",
+        "max_drawdown": "1.69%",
+        "trades_per_day": "0.02",
+        "score": "6.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:22:38.506428+00:00"
+    },
+    {
+      "strategy": "AiHypothesis1bb826fbaa",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.28",
+        "cagr": "0.85%",
+        "max_drawdown": "2.80%",
+        "trades_per_day": "0.07",
+        "score": "4.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:22:32.940145+00:00"
+    },
+    {
+      "strategy": "AiHypothesis1bb826fbaa",
+      "status": "baseline_failed",
+      "note": "2026-08-17 13:22:23,121 - freqtrade - INFO - freqtrade 2026.7",
+      "metrics": {},
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:22:26.291980+00:00"
+    },
+    {
+      "strategy": "BtcThirtyDayMomentum",
+      "status": "baseline_passed",
+      "note": "\u2502 0.74                                      \u2502",
+      "metrics": {
+        "pf": "1.69",
+        "cagr": "2.78%",
+        "max_drawdown": "3.65%",
+        "trades_per_day": "0.05",
+        "score": "5.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:15:39.843652+00:00"
+    },
+    {
+      "strategy": "BtcThirtyDayMomentum",
+      "status": "baseline_passed",
+      "note": "      \u2502 0.14                                      \u2502",
+      "metrics": {
+        "pf": "1.05",
+        "cagr": "0.39%",
+        "max_drawdown": "8.06%",
+        "trades_per_day": "0.28",
+        "score": "4.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:15:34.504567+00:00"
+    },
+    {
+      "strategy": "BtcThirtyDayMomentum",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -1.50                                     \u2502",
+      "metrics": {
+        "pf": "0.75",
+        "cagr": "-5.25%",
+        "max_drawdown": "16.18%",
+        "trades_per_day": "1.07",
+        "score": "3.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:15:28.997921+00:00"
+    },
+    {
+      "strategy": "AiHypothesisfc7acd6164",
+      "status": "baseline_passed",
+      "note": "50                                     \u2502",
+      "metrics": {
+        "pf": "0.61",
+        "cagr": "-0.79%",
+        "max_drawdown": "3.46%",
+        "trades_per_day": "0.02",
+        "score": "2.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:15:21.724579+00:00"
+    },
+    {
+      "strategy": "AiHypothesisfc7acd6164",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.11                                     \u2502",
+      "metrics": {
+        "pf": "0.95",
+        "cagr": "-0.25%",
+        "max_drawdown": "3.20%",
+        "trades_per_day": "0.07",
+        "score": "3.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:15:16.832577+00:00"
+    },
+    {
+      "strategy": "AiHypothesisfc7acd6164",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.80                                     \u2502",
+      "metrics": {
+        "pf": "0.82",
+        "cagr": "-1.59%",
+        "max_drawdown": "6.45%",
+        "trades_per_day": "0.22",
+        "score": "3.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:15:11.577432+00:00"
+    },
+    {
+      "strategy": "AiHypothesisf7b25a87d3",
+      "status": "baseline_passed",
+      "note": "10                                     \u2502",
+      "metrics": {
+        "pf": "0.89",
+        "cagr": "-0.15%",
+        "max_drawdown": "2.36%",
+        "trades_per_day": "0.02",
+        "score": "3.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:15:05.380766+00:00"
+    },
+    {
+      "strategy": "AiHypothesisf7b25a87d3",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.11                                     \u2502",
+      "metrics": {
+        "pf": "0.96",
+        "cagr": "-0.24%",
+        "max_drawdown": "4.40%",
+        "trades_per_day": "0.12",
+        "score": "3.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:15:00.189895+00:00"
+    },
+    {
+      "strategy": "AiHypothesisf7b25a87d3",
+      "status": "baseline_passed",
+      "note": "\u2502 -1.47                                     \u2502",
+      "metrics": {
+        "pf": "0.71",
+        "cagr": "-3.20%",
+        "max_drawdown": "11.47%",
+        "trades_per_day": "0.31",
+        "score": "3.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:14:54.606415+00:00"
+    },
+    {
+      "strategy": "AiHypothesisf7975fc7ba",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.21",
+        "cagr": "0.57%",
+        "max_drawdown": "3.91%",
+        "trades_per_day": "0.03",
+        "score": "4.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:14:48.837068+00:00"
+    },
+    {
+      "strategy": "AiHypothesisf7975fc7ba",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.59                                     \u2502",
+      "metrics": {
+        "pf": "0.83",
+        "cagr": "-1.55%",
+        "max_drawdown": "7.92%",
+        "trades_per_day": "0.15",
+        "score": "3.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:14:44.169164+00:00"
+    },
+    {
+      "strategy": "AiHypothesisf7975fc7ba",
+      "status": "baseline_passed",
+      "note": "\u2502 -1.80                                     \u2502",
+      "metrics": {
+        "pf": "0.70",
+        "cagr": "-4.80%",
+        "max_drawdown": "14.92%",
+        "trades_per_day": "0.48",
+        "score": "3.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:14:38.839639+00:00"
+    },
+    {
+      "strategy": "AiHypothesisf43457d09a",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "3.88",
+        "cagr": "4.62%",
+        "max_drawdown": "2.06%",
+        "trades_per_day": "0.02",
+        "score": "6.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:14:33.182201+00:00"
+    },
+    {
+      "strategy": "AiHypothesisf43457d09a",
+      "status": "baseline_passed",
+      "note": "1                                      \u2502",
+      "metrics": {
+        "pf": "1.14",
+        "cagr": "0.96%",
+        "max_drawdown": "6.54%",
+        "trades_per_day": "0.12",
+        "score": "4.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:14:28.406164+00:00"
+    },
+    {
+      "strategy": "AiHypothesisf43457d09a",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.37                                     \u2502",
+      "metrics": {
+        "pf": "0.91",
+        "cagr": "-1.29%",
+        "max_drawdown": "8.45%",
+        "trades_per_day": "0.5",
+        "score": "4.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:14:23.387430+00:00"
+    },
+    {
+      "strategy": "AiHypothesisf27c8af24d",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "4.26",
+        "cagr": "3.71%",
+        "max_drawdown": "1.95%",
+        "trades_per_day": "0.01",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:14:16.963140+00:00"
+    },
+    {
+      "strategy": "AiHypothesisf27c8af24d",
+      "status": "baseline_passed",
+      "note": "4                                      \u2502",
+      "metrics": {
+        "pf": "1.69",
+        "cagr": "2.99%",
+        "max_drawdown": "2.70%",
+        "trades_per_day": "0.07",
+        "score": "5.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:14:12.473478+00:00"
+    },
+    {
+      "strategy": "AiHypothesisf27c8af24d",
+      "status": "baseline_passed",
+      "note": "1                                      \u2502",
+      "metrics": {
+        "pf": "1.00",
+        "cagr": "-0.03%",
+        "max_drawdown": "7.47%",
+        "trades_per_day": "0.28",
+        "score": "4.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:14:06.987364+00:00"
+    },
+    {
+      "strategy": "AiHypothesisf1b260c7c9",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "2.59",
+        "cagr": "2.05%",
+        "max_drawdown": "1.59%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:14:01.526768+00:00"
+    },
+    {
+      "strategy": "AiHypothesisf1b260c7c9",
+      "status": "baseline_passed",
+      "note": "6                                      \u2502",
+      "metrics": {
+        "pf": "1.02",
+        "cagr": "0.10%",
+        "max_drawdown": "3.84%",
+        "trades_per_day": "0.09",
+        "score": "3.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:13:57.113427+00:00"
+    },
+    {
+      "strategy": "AiHypothesisf1b260c7c9",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.82                                     \u2502",
+      "metrics": {
+        "pf": "0.79",
+        "cagr": "-1.94%",
+        "max_drawdown": "8.61%",
+        "trades_per_day": "0.33",
+        "score": "3.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:13:52.513524+00:00"
+    },
+    {
+      "strategy": "AiHypothesisee91dcc8a4",
+      "status": "baseline_passed",
+      "note": "\u2502 -2.43                                     \u2502",
+      "metrics": {
+        "pf": "0.68",
+        "cagr": "-5.95%",
+        "max_drawdown": "17.92%",
+        "trades_per_day": "0.8",
+        "score": "3.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:13:46.087373+00:00"
+    },
+    {
+      "strategy": "AiHypothesisee91dcc8a4",
+      "status": "baseline_passed",
+      "note": "\u2502 -6.16                                     \u2502",
+      "metrics": {
+        "pf": "0.52",
+        "cagr": "-17.15%",
+        "max_drawdown": "43.24%",
+        "trades_per_day": "2.31",
+        "score": "1.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:13:39.100211+00:00"
+    },
+    {
+      "strategy": "AiHypothesisea573ad83a",
+      "status": "baseline_passed",
+      "note": "      \u2502 -3.52                                     \u2502",
+      "metrics": {
+        "pf": "0.62",
+        "cagr": "-10.99%",
+        "max_drawdown": "29.59%",
+        "trades_per_day": "1.33",
+        "score": "2.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:13:26.840707+00:00"
+    },
+    {
+      "strategy": "AiHypothesisea573ad83a",
+      "status": "baseline_passed",
+      "note": "\u2502 -4.45                                     \u2502",
+      "metrics": {
+        "pf": "0.58",
+        "cagr": "-11.93%",
+        "max_drawdown": "31.94%",
+        "trades_per_day": "1.6",
+        "score": "2.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:13:18.135064+00:00"
+    },
+    {
+      "strategy": "AiHypothesise446a59036",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "1.75",
+        "cagr": "2.10%",
+        "max_drawdown": "3.90%",
+        "trades_per_day": "0.02",
+        "score": "5.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:13:06.994494+00:00"
+    },
+    {
+      "strategy": "AiHypothesise446a59036",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.33",
+        "cagr": "1.59%",
+        "max_drawdown": "4.37%",
+        "trades_per_day": "0.08",
+        "score": "4.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:13:02.672517+00:00"
+    },
+    {
+      "strategy": "AiHypothesise446a59036",
+      "status": "baseline_passed",
+      "note": "13                                     \u2502",
+      "metrics": {
+        "pf": "0.96",
+        "cagr": "-0.45%",
+        "max_drawdown": "6.89%",
+        "trades_per_day": "0.3",
+        "score": "4.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:12:57.983381+00:00"
+    },
+    {
+      "strategy": "AiHypothesise2194a955c",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.11",
+        "cagr": "3.00%",
+        "max_drawdown": "2.77%",
+        "trades_per_day": "0.03",
+        "score": "6.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:12:52.624926+00:00"
+    },
+    {
+      "strategy": "AiHypothesise2194a955c",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.12",
+        "cagr": "0.88%",
+        "max_drawdown": "6.67%",
+        "trades_per_day": "0.16",
+        "score": "4.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:12:47.618128+00:00"
+    },
+    {
+      "strategy": "AiHypothesise2194a955c",
+      "status": "baseline_passed",
+      "note": "\u2502 -1.00                                     \u2502",
+      "metrics": {
+        "pf": "0.81",
+        "cagr": "-3.42%",
+        "max_drawdown": "11.74%",
+        "trades_per_day": "0.69",
+        "score": "3.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:12:42.897006+00:00"
+    },
+    {
+      "strategy": "AiHypothesise211e2d1eb",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.38",
+        "cagr": "0.50%",
+        "max_drawdown": "1.13%",
+        "trades_per_day": "0.03",
+        "score": "4.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:12:37.395367+00:00"
+    },
+    {
+      "strategy": "AiHypothesise211e2d1eb",
+      "status": "baseline_passed",
+      "note": ")          \u2502 0.18                                      \u2502",
+      "metrics": {
+        "pf": "1.08",
+        "cagr": "0.23%",
+        "max_drawdown": "2.53%",
+        "trades_per_day": "0.11",
+        "score": "4.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:12:32.935212+00:00"
+    },
+    {
+      "strategy": "AiHypothesise211e2d1eb",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -1.87                                     \u2502",
+      "metrics": {
+        "pf": "0.63",
+        "cagr": "-2.76%",
+        "max_drawdown": "8.95%",
+        "trades_per_day": "0.4",
+        "score": "3.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:12:28.404413+00:00"
+    },
+    {
+      "strategy": "AiHypothesisde03de772c",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "2.37",
+        "cagr": "2.61%",
+        "max_drawdown": "2.04%",
+        "trades_per_day": "0.01",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:12:22.397029+00:00"
+    },
+    {
+      "strategy": "AiHypothesisde03de772c",
+      "status": "baseline_passed",
+      "note": "      \u2502 0.11                                      \u2502",
+      "metrics": {
+        "pf": "1.05",
+        "cagr": "0.25%",
+        "max_drawdown": "5.94%",
+        "trades_per_day": "0.07",
+        "score": "3.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:12:17.868002+00:00"
+    },
+    {
+      "strategy": "AiHypothesisde03de772c",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.34                                     \u2502",
+      "metrics": {
+        "pf": "0.90",
+        "cagr": "-0.93%",
+        "max_drawdown": "6.65%",
+        "trades_per_day": "0.27",
+        "score": "4.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:12:13.091141+00:00"
+    },
+    {
+      "strategy": "AiHypothesisdc5e324522",
+      "status": "baseline_passed",
+      "note": "49                                     \u2502",
+      "metrics": {
+        "pf": "0.69",
+        "cagr": "-0.79%",
+        "max_drawdown": "4.83%",
+        "trades_per_day": "0.04",
+        "score": "2.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:12:07.219007+00:00"
+    },
+    {
+      "strategy": "AiHypothesisdc5e324522",
+      "status": "baseline_passed",
+      "note": "      \u2502 -0.24                                     \u2502",
+      "metrics": {
+        "pf": "0.92",
+        "cagr": "-0.56%",
+        "max_drawdown": "4.34%",
+        "trades_per_day": "0.13",
+        "score": "3.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:12:02.867977+00:00"
+    },
+    {
+      "strategy": "AiHypothesisdc5e324522",
+      "status": "baseline_passed",
+      "note": "alance)          \u2502 -1.36                                     \u2502",
+      "metrics": {
+        "pf": "0.78",
+        "cagr": "-2.94%",
+        "max_drawdown": "8.99%",
+        "trades_per_day": "0.38",
+        "score": "3.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:11:58.185881+00:00"
+    },
+    {
+      "strategy": "AiHypothesisd99c5d142a",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "1.89",
+        "cagr": "1.73%",
+        "max_drawdown": "2.34%",
+        "trades_per_day": "0.02",
+        "score": "6.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:11:52.813550+00:00"
+    },
+    {
+      "strategy": "AiHypothesisd99c5d142a",
+      "status": "baseline_passed",
+      "note": "0                                      \u2502",
+      "metrics": {
+        "pf": "1.04",
+        "cagr": "0.22%",
+        "max_drawdown": "4.61%",
+        "trades_per_day": "0.11",
+        "score": "3.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:11:47.646358+00:00"
+    },
+    {
+      "strategy": "AiHypothesisd99c5d142a",
+      "status": "baseline_passed",
+      "note": "\u2502 -1.03                                     \u2502",
+      "metrics": {
+        "pf": "0.77",
+        "cagr": "-2.54%",
+        "max_drawdown": "10.35%",
+        "trades_per_day": "0.42",
+        "score": "3.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:11:42.532256+00:00"
+    },
+    {
+      "strategy": "AiHypothesisd81ad8e4c0",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "2.38",
+        "cagr": "3.53%",
+        "max_drawdown": "2.97%",
+        "trades_per_day": "0.03",
+        "score": "6.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:11:37.355249+00:00"
+    },
+    {
+      "strategy": "AiHypothesisd81ad8e4c0",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.13",
+        "cagr": "0.93%",
+        "max_drawdown": "6.44%",
+        "trades_per_day": "0.16",
+        "score": "4.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:11:32.766886+00:00"
+    },
+    {
+      "strategy": "AiHypothesisd81ad8e4c0",
+      "status": "baseline_passed",
+      "note": "\u2502 -1.39                                     \u2502",
+      "metrics": {
+        "pf": "0.75",
+        "cagr": "-4.64%",
+        "max_drawdown": "14.50%",
+        "trades_per_day": "0.74",
+        "score": "3.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:11:28.088180+00:00"
+    },
+    {
+      "strategy": "AiHypothesisd7a58e04b3",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "3.51",
+        "cagr": "3.00%",
+        "max_drawdown": "2.16%",
+        "trades_per_day": "0.01",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:11:21.243558+00:00"
+    },
+    {
+      "strategy": "AiHypothesisd7a58e04b3",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.34",
+        "cagr": "1.21%",
+        "max_drawdown": "3.49%",
+        "trades_per_day": "0.06",
+        "score": "4.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:11:16.793464+00:00"
+    },
+    {
+      "strategy": "AiHypothesisd7a58e04b3",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.50                                     \u2502",
+      "metrics": {
+        "pf": "0.85",
+        "cagr": "-1.25%",
+        "max_drawdown": "7.53%",
+        "trades_per_day": "0.23",
+        "score": "3.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:11:10.895405+00:00"
+    },
+    {
+      "strategy": "AiHypothesiscdc37ae3a1",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "0.92",
+        "cagr": "-0.17%",
+        "max_drawdown": "1.83%",
+        "trades_per_day": "0.02",
+        "score": "3.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:11:05.883834+00:00"
+    },
+    {
+      "strategy": "AiHypothesiscdc37ae3a1",
+      "status": "baseline_passed",
+      "note": "2                                      \u2502",
+      "metrics": {
+        "pf": "1.05",
+        "cagr": "0.24%",
+        "max_drawdown": "3.67%",
+        "trades_per_day": "0.08",
+        "score": "3.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:11:01.439695+00:00"
+    },
+    {
+      "strategy": "AiHypothesiscdc37ae3a1",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.63                                     \u2502",
+      "metrics": {
+        "pf": "0.83",
+        "cagr": "-1.46%",
+        "max_drawdown": "7.10%",
+        "trades_per_day": "0.25",
+        "score": "3.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:10:56.869553+00:00"
+    },
+    {
+      "strategy": "AiHypothesisc848c0c2fd",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.86",
+        "cagr": "3.40%",
+        "max_drawdown": "2.40%",
+        "trades_per_day": "0.01",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:10:51.821903+00:00"
+    },
+    {
+      "strategy": "AiHypothesisc848c0c2fd",
+      "status": "baseline_passed",
+      "note": "8                                      \u2502",
+      "metrics": {
+        "pf": "1.28",
+        "cagr": "1.44%",
+        "max_drawdown": "4.49%",
+        "trades_per_day": "0.08",
+        "score": "4.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:10:46.855498+00:00"
+    },
+    {
+      "strategy": "AiHypothesisc848c0c2fd",
+      "status": "baseline_passed",
+      "note": "1                                      \u2502",
+      "metrics": {
+        "pf": "1.06",
+        "cagr": "0.62%",
+        "max_drawdown": "6.30%",
+        "trades_per_day": "0.3",
+        "score": "4.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:10:32.048247+00:00"
+    },
+    {
+      "strategy": "AiHypothesisc578e59751",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.23",
+        "cagr": "3.22%",
+        "max_drawdown": "2.96%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:10:22.735767+00:00"
+    },
+    {
+      "strategy": "AiHypothesisc578e59751",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.18",
+        "cagr": "1.17%",
+        "max_drawdown": "5.17%",
+        "trades_per_day": "0.12",
+        "score": "4.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:10:15.816326+00:00"
+    },
+    {
+      "strategy": "AiHypothesisc578e59751",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.66                                     \u2502",
+      "metrics": {
+        "pf": "0.85",
+        "cagr": "-2.16%",
+        "max_drawdown": "10.11%",
+        "trades_per_day": "0.5",
+        "score": "4.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:10:00.556169+00:00"
+    },
+    {
+      "strategy": "AiHypothesisc51b3cee93",
+      "status": "baseline_passed",
+      "note": "\u2502 -2.04                                     \u2502",
+      "metrics": {
+        "pf": "0.72",
+        "cagr": "-7.00%",
+        "max_drawdown": "19.86%",
+        "trades_per_day": "1.05",
+        "score": "2.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:09:50.241134+00:00"
+    },
+    {
+      "strategy": "AiHypothesisc51b3cee93",
+      "status": "baseline_passed",
+      "note": "\u2502 -2.83                                     \u2502",
+      "metrics": {
+        "pf": "0.68",
+        "cagr": "-8.53%",
+        "max_drawdown": "23.88%",
+        "trades_per_day": "1.37",
+        "score": "2.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:09:41.403337+00:00"
+    },
+    {
+      "strategy": "AiHypothesisc3e121ad98",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "2.29",
+        "cagr": "3.12%",
+        "max_drawdown": "3.03%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:09:29.233576+00:00"
+    },
+    {
+      "strategy": "AiHypothesisc3e121ad98",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.16",
+        "cagr": "0.93%",
+        "max_drawdown": "5.97%",
+        "trades_per_day": "0.1",
+        "score": "4.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:09:23.663530+00:00"
+    },
+    {
+      "strategy": "AiHypothesisc3e121ad98",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.12                                     \u2502",
+      "metrics": {
+        "pf": "0.96",
+        "cagr": "-0.44%",
+        "max_drawdown": "7.59%",
+        "trades_per_day": "0.37",
+        "score": "4.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:09:16.780156+00:00"
+    },
+    {
+      "strategy": "AiHypothesisc21a7faa0a",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "0.45",
+        "cagr": "-1.07%",
+        "max_drawdown": "4.35%",
+        "trades_per_day": "0.03",
+        "score": "2.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:09:11.380064+00:00"
+    },
+    {
+      "strategy": "AiHypothesisc21a7faa0a",
+      "status": "baseline_passed",
+      "note": "6                                      \u2502",
+      "metrics": {
+        "pf": "1.06",
+        "cagr": "0.35%",
+        "max_drawdown": "4.36%",
+        "trades_per_day": "0.11",
+        "score": "4.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:09:04.101347+00:00"
+    },
+    {
+      "strategy": "AiHypothesisc21a7faa0a",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.79                                     \u2502",
+      "metrics": {
+        "pf": "0.85",
+        "cagr": "-1.99%",
+        "max_drawdown": "7.41%",
+        "trades_per_day": "0.3",
+        "score": "4.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:08:59.208695+00:00"
+    },
+    {
+      "strategy": "AiHypothesisbe9e7af8ae",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "0.69",
+        "cagr": "-0.77%",
+        "max_drawdown": "4.33%",
+        "trades_per_day": "0.02",
+        "score": "2.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:08:54.146987+00:00"
+    },
+    {
+      "strategy": "AiHypothesisbe9e7af8ae",
+      "status": "baseline_passed",
+      "note": "0                                      \u2502",
+      "metrics": {
+        "pf": "1.04",
+        "cagr": "0.19%",
+        "max_drawdown": "3.57%",
+        "trades_per_day": "0.07",
+        "score": "3.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:08:49.200959+00:00"
+    },
+    {
+      "strategy": "AiHypothesisbe9e7af8ae",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.71                                     \u2502",
+      "metrics": {
+        "pf": "0.81",
+        "cagr": "-1.56%",
+        "max_drawdown": "7.80%",
+        "trades_per_day": "0.2",
+        "score": "3.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:08:44.472785+00:00"
+    },
+    {
+      "strategy": "AiHypothesisbdffacf77f",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.16",
+        "cagr": "2.43%",
+        "max_drawdown": "2.30%",
+        "trades_per_day": "0.03",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:08:39.189979+00:00"
+    },
+    {
+      "strategy": "AiHypothesisbdffacf77f",
+      "status": "baseline_passed",
+      "note": "0                                      \u2502",
+      "metrics": {
+        "pf": "1.09",
+        "cagr": "0.50%",
+        "max_drawdown": "4.25%",
+        "trades_per_day": "0.14",
+        "score": "4.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:08:34.764425+00:00"
+    },
+    {
+      "strategy": "AiHypothesisbdffacf77f",
+      "status": "baseline_passed",
+      "note": "\u2502 -1.10                                     \u2502",
+      "metrics": {
+        "pf": "0.76",
+        "cagr": "-3.11%",
+        "max_drawdown": "11.03%",
+        "trades_per_day": "0.54",
+        "score": "3.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:08:19.293518+00:00"
+    },
+    {
+      "strategy": "AiHypothesisbd7c6f7610",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.32                                     \u2502",
+      "metrics": {
+        "pf": "0.74",
+        "cagr": "-0.88%",
+        "max_drawdown": "5.83%",
+        "trades_per_day": "0.02",
+        "score": "2.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:08:10.598433+00:00"
+    },
+    {
+      "strategy": "AiHypothesisbd7c6f7610",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "0.94",
+        "cagr": "-0.39%",
+        "max_drawdown": "3.31%",
+        "trades_per_day": "0.08",
+        "score": "3.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:07:59.758587+00:00"
+    },
+    {
+      "strategy": "AiHypothesisbd7c6f7610",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.65                                     \u2502",
+      "metrics": {
+        "pf": "0.84",
+        "cagr": "-1.65%",
+        "max_drawdown": "7.55%",
+        "trades_per_day": "0.25",
+        "score": "3.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:07:53.972172+00:00"
+    },
+    {
+      "strategy": "AiHypothesisb6921a9ae4",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "3.39",
+        "cagr": "4.23%",
+        "max_drawdown": "1.99%",
+        "trades_per_day": "0.02",
+        "score": "6.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:07:40.662347+00:00"
+    },
+    {
+      "strategy": "AiHypothesisb6921a9ae4",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.15",
+        "cagr": "1.10%",
+        "max_drawdown": "6.55%",
+        "trades_per_day": "0.15",
+        "score": "4.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:07:35.437140+00:00"
+    },
+    {
+      "strategy": "AiHypothesisb6921a9ae4",
+      "status": "baseline_failed",
+      "note": "eqtrade/freqtrade/exchange/common.py\", line 193, in wrapper",
+      "metrics": {},
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:07:26.322924+00:00"
+    },
+    {
+      "strategy": "AiHypothesisb43547535a",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "2.82",
+        "cagr": "2.72%",
+        "max_drawdown": "2.17%",
+        "trades_per_day": "0.01",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:06:40.663304+00:00"
+    },
+    {
+      "strategy": "AiHypothesisb43547535a",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.36",
+        "cagr": "1.64%",
+        "max_drawdown": "4.04%",
+        "trades_per_day": "0.06",
+        "score": "4.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:06:25.521313+00:00"
+    },
+    {
+      "strategy": "AiHypothesisb43547535a",
+      "status": "baseline_passed",
+      "note": "26                                     \u2502",
+      "metrics": {
+        "pf": "0.91",
+        "cagr": "-0.82%",
+        "max_drawdown": "7.52%",
+        "trades_per_day": "0.22",
+        "score": "3.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:06:14.018592+00:00"
+    },
+    {
+      "strategy": "AiHypothesisb210c2d095",
+      "status": "baseline_failed",
+      "note": "eqtrade/freqtrade/exchange/common.py\", line 193, in wrapper",
+      "metrics": {},
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:05:44.225976+00:00"
+    },
+    {
+      "strategy": "AiHypothesisb210c2d095",
+      "status": "baseline_failed",
+      "note": "eqtrade/freqtrade/exchange/common.py\", line 193, in wrapper",
+      "metrics": {},
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:04:58.236677+00:00"
+    },
+    {
+      "strategy": "AiHypothesisb210c2d095",
+      "status": "baseline_failed",
+      "note": "eqtrade/freqtrade/exchange/common.py\", line 193, in wrapper",
+      "metrics": {},
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:04:12.219576+00:00"
+    },
+    {
+      "strategy": "AiHypothesisadee3b4612",
+      "status": "baseline_failed",
+      "note": "eqtrade/freqtrade/exchange/common.py\", line 193, in wrapper",
+      "metrics": {},
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:03:26.233426+00:00"
+    },
+    {
+      "strategy": "AiHypothesisadee3b4612",
+      "status": "baseline_failed",
+      "note": "eqtrade/freqtrade/exchange/common.py\", line 193, in wrapper",
+      "metrics": {},
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:02:40.237386+00:00"
+    },
+    {
+      "strategy": "AiHypothesisabca86dde7",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.83",
+        "cagr": "1.65%",
+        "max_drawdown": "2.55%",
+        "trades_per_day": "0.02",
+        "score": "6.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:01:54.631756+00:00"
+    },
+    {
+      "strategy": "AiHypothesisabca86dde7",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.00",
+        "cagr": "-0.02%",
+        "max_drawdown": "6.02%",
+        "trades_per_day": "0.11",
+        "score": "3.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:01:28.352484+00:00"
+    },
+    {
+      "strategy": "AiHypothesisabca86dde7",
+      "status": "baseline_failed",
+      "note": "eqtrade/freqtrade/exchange/common.py\", line 193, in wrapper",
+      "metrics": {},
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:01:09.237653+00:00"
+    },
+    {
+      "strategy": "AiHypothesisabbec17e2f",
+      "status": "baseline_failed",
+      "note": "eqtrade/freqtrade/exchange/common.py\", line 193, in wrapper",
+      "metrics": {},
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T13:00:23.288892+00:00"
+    },
+    {
+      "strategy": "AiHypothesisabbec17e2f",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.23",
+        "cagr": "1.40%",
+        "max_drawdown": "4.97%",
+        "trades_per_day": "0.11",
+        "score": "4.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:59:37.614060+00:00"
+    },
+    {
+      "strategy": "AiHypothesisabbec17e2f",
+      "status": "baseline_passed",
+      "note": "      \u2502 -0.61                                     \u2502",
+      "metrics": {
+        "pf": "0.86",
+        "cagr": "-1.99%",
+        "max_drawdown": "9.60%",
+        "trades_per_day": "0.46",
+        "score": "4.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:59:30.602410+00:00"
+    },
+    {
+      "strategy": "AiHypothesisab583542c5",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.25",
+        "cagr": "2.72%",
+        "max_drawdown": "2.28%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:58:47.855545+00:00"
+    },
+    {
+      "strategy": "AiHypothesisab583542c5",
+      "status": "baseline_passed",
+      "note": "\u2502 0.59                                      \u2502",
+      "metrics": {
+        "pf": "1.37",
+        "cagr": "1.62%",
+        "max_drawdown": "3.56%",
+        "trades_per_day": "0.08",
+        "score": "4.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:58:28.022728+00:00"
+    },
+    {
+      "strategy": "AiHypothesisab583542c5",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.30                                     \u2502",
+      "metrics": {
+        "pf": "0.91",
+        "cagr": "-0.90%",
+        "max_drawdown": "7.46%",
+        "trades_per_day": "0.3",
+        "score": "4.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:58:17.770540+00:00"
+    },
+    {
+      "strategy": "AiHypothesisa4d1676ef6",
+      "status": "baseline_failed",
+      "note": "eqtrade/freqtrade/exchange/common.py\", line 193, in wrapper",
+      "metrics": {},
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:57:39.280627+00:00"
+    },
+    {
+      "strategy": "AiHypothesisa4d1676ef6",
+      "status": "baseline_passed",
+      "note": "\u2502 -6.70                                     \u2502",
+      "metrics": {
+        "pf": "0.41",
+        "cagr": "-53.46%",
+        "max_drawdown": "89.92%",
+        "trades_per_day": "4.5",
+        "score": "1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:56:53.441933+00:00"
+    },
+    {
+      "strategy": "AiHypothesisa380e3e053",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.07",
+        "cagr": "2.53%",
+        "max_drawdown": "2.38%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:56:20.781520+00:00"
+    },
+    {
+      "strategy": "AiHypothesisa380e3e053",
+      "status": "baseline_failed",
+      "note": "eqtrade/freqtrade/exchange/common.py\", line 193, in wrapper",
+      "metrics": {},
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:56:03.335432+00:00"
+    },
+    {
+      "strategy": "AiHypothesisa380e3e053",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.13                                     \u2502",
+      "metrics": {
+        "pf": "0.96",
+        "cagr": "-0.46%",
+        "max_drawdown": "7.46%",
+        "trades_per_day": "0.3",
+        "score": "4.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:55:17.671691+00:00"
+    },
+    {
+      "strategy": "AiHypothesis9fcb3fabad",
+      "status": "baseline_passed",
+      "note": "1                                      \u2502",
+      "metrics": {
+        "pf": "2.97",
+        "cagr": "4.03%",
+        "max_drawdown": "2.42%",
+        "trades_per_day": "0.02",
+        "score": "6.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:55:11.634179+00:00"
+    },
+    {
+      "strategy": "AiHypothesis9fcb3fabad",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.19",
+        "cagr": "1.22%",
+        "max_drawdown": "4.45%",
+        "trades_per_day": "0.17",
+        "score": "4.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:55:06.946427+00:00"
+    },
+    {
+      "strategy": "AiHypothesis9fcb3fabad",
+      "status": "baseline_passed",
+      "note": "      \u2502 -1.57                                     \u2502",
+      "metrics": {
+        "pf": "0.73",
+        "cagr": "-5.15%",
+        "max_drawdown": "15.30%",
+        "trades_per_day": "0.83",
+        "score": "3.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:55:01.768441+00:00"
+    },
+    {
+      "strategy": "AiHypothesis9dd75e1437",
+      "status": "baseline_passed",
+      "note": "5                                      \u2502",
+      "metrics": {
+        "pf": "1.38",
+        "cagr": "0.65%",
+        "max_drawdown": "1.47%",
+        "trades_per_day": "0.03",
+        "score": "4.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:54:55.443048+00:00"
+    },
+    {
+      "strategy": "AiHypothesis9dd75e1437",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.68                                     \u2502",
+      "metrics": {
+        "pf": "0.77",
+        "cagr": "-1.10%",
+        "max_drawdown": "5.77%",
+        "trades_per_day": "0.16",
+        "score": "3.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:54:50.561559+00:00"
+    },
+    {
+      "strategy": "AiHypothesis9dd75e1437",
+      "status": "baseline_passed",
+      "note": "\u2502 -2.25                                     \u2502",
+      "metrics": {
+        "pf": "0.62",
+        "cagr": "-3.73%",
+        "max_drawdown": "11.38%",
+        "trades_per_day": "0.53",
+        "score": "3.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:54:45.458190+00:00"
+    },
+    {
+      "strategy": "AiHypothesis9c673c6a1c",
+      "status": "baseline_passed",
+      "note": "\u2502 -5.94                                     \u2502",
+      "metrics": {
+        "pf": "0.51",
+        "cagr": "-15.80%",
+        "max_drawdown": "40.44%",
+        "trades_per_day": "1.87",
+        "score": "1.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:54:22.016808+00:00"
+    },
+    {
+      "strategy": "AiHypothesis9c673c6a1c",
+      "status": "baseline_passed",
+      "note": "\u2502 -11.15                                    \u2502",
+      "metrics": {
+        "pf": "0.33",
+        "cagr": "-53.43%",
+        "max_drawdown": "89.90%",
+        "trades_per_day": "4.21",
+        "score": "1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:54:13.315838+00:00"
+    },
+    {
+      "strategy": "AiHypothesis9833377202",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.94",
+        "cagr": "3.96%",
+        "max_drawdown": "2.33%",
+        "trades_per_day": "0.02",
+        "score": "6.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:53:58.277874+00:00"
+    },
+    {
+      "strategy": "AiHypothesis9833377202",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.30",
+        "cagr": "1.74%",
+        "max_drawdown": "4.30%",
+        "trades_per_day": "0.12",
+        "score": "4.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:53:53.381961+00:00"
+    },
+    {
+      "strategy": "AiHypothesis9833377202",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.72                                     \u2502",
+      "metrics": {
+        "pf": "0.84",
+        "cagr": "-2.34%",
+        "max_drawdown": "10.47%",
+        "trades_per_day": "0.51",
+        "score": "3.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:53:48.155782+00:00"
+    },
+    {
+      "strategy": "AiHypothesis949361f7e1",
+      "status": "baseline_passed",
+      "note": "\u2502 -4.31                                     \u2502",
+      "metrics": {
+        "pf": "0.55",
+        "cagr": "-9.71%",
+        "max_drawdown": "26.71%",
+        "trades_per_day": "1.27",
+        "score": "2.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:53:42.133367+00:00"
+    },
+    {
+      "strategy": "AiHypothesis949361f7e1",
+      "status": "baseline_passed",
+      "note": "\u2502 -12.54                                    \u2502",
+      "metrics": {
+        "pf": "0.33",
+        "cagr": "-51.43%",
+        "max_drawdown": "88.55%",
+        "trades_per_day": "4.02",
+        "score": "1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:53:34.040228+00:00"
+    },
+    {
+      "strategy": "AiHypothesis934d6e7eec",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "2.11",
+        "cagr": "2.35%",
+        "max_drawdown": "2.86%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:53:18.164685+00:00"
+    },
+    {
+      "strategy": "AiHypothesis934d6e7eec",
+      "status": "baseline_passed",
+      "note": "3                                      \u2502",
+      "metrics": {
+        "pf": "1.34",
+        "cagr": "1.49%",
+        "max_drawdown": "3.11%",
+        "trades_per_day": "0.07",
+        "score": "4.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:53:12.800411+00:00"
+    },
+    {
+      "strategy": "AiHypothesis934d6e7eec",
+      "status": "baseline_passed",
+      "note": "3                                      \u2502",
+      "metrics": {
+        "pf": "1.07",
+        "cagr": "0.63%",
+        "max_drawdown": "4.88%",
+        "trades_per_day": "0.23",
+        "score": "4.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:53:07.388833+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8e564a1a0c",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "4.29",
+        "cagr": "3.40%",
+        "max_drawdown": "1.56%",
+        "trades_per_day": "0.01",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:53:01.534280+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8e564a1a0c",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.58",
+        "cagr": "2.56%",
+        "max_drawdown": "2.85%",
+        "trades_per_day": "0.07",
+        "score": "5.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:52:56.643870+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8e564a1a0c",
+      "status": "baseline_passed",
+      "note": "05                                     \u2502",
+      "metrics": {
+        "pf": "0.98",
+        "cagr": "-0.21%",
+        "max_drawdown": "7.73%",
+        "trades_per_day": "0.25",
+        "score": "4.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:52:51.560941+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8baf8dc4c3",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "2.73",
+        "cagr": "3.42%",
+        "max_drawdown": "3.08%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:52:45.617034+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8baf8dc4c3",
+      "status": "baseline_passed",
+      "note": "5                                      \u2502",
+      "metrics": {
+        "pf": "1.16",
+        "cagr": "0.96%",
+        "max_drawdown": "4.30%",
+        "trades_per_day": "0.12",
+        "score": "4.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:52:40.764094+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8baf8dc4c3",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.93                                     \u2502",
+      "metrics": {
+        "pf": "0.80",
+        "cagr": "-2.91%",
+        "max_drawdown": "10.17%",
+        "trades_per_day": "0.52",
+        "score": "3.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:52:35.593043+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8a8fc04b5e",
+      "status": "baseline_passed",
+      "note": "38                                     \u2502",
+      "metrics": {
+        "pf": "0.78",
+        "cagr": "-0.75%",
+        "max_drawdown": "5.78%",
+        "trades_per_day": "0.03",
+        "score": "2.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:52:29.697963+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8a8fc04b5e",
+      "status": "baseline_passed",
+      "note": "24                                     \u2502",
+      "metrics": {
+        "pf": "0.92",
+        "cagr": "-0.60%",
+        "max_drawdown": "5.93%",
+        "trades_per_day": "0.12",
+        "score": "3.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:52:25.030394+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8a8fc04b5e",
+      "status": "baseline_passed",
+      "note": "      \u2502 -1.59                                     \u2502",
+      "metrics": {
+        "pf": "0.71",
+        "cagr": "-3.79%",
+        "max_drawdown": "12.31%",
+        "trades_per_day": "0.39",
+        "score": "3.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:52:20.067376+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8909642914",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.73",
+        "cagr": "3.93%",
+        "max_drawdown": "2.34%",
+        "trades_per_day": "0.02",
+        "score": "6.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:52:14.082181+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8909642914",
+      "status": "baseline_passed",
+      "note": "3                                      \u2502",
+      "metrics": {
+        "pf": "1.28",
+        "cagr": "1.70%",
+        "max_drawdown": "4.68%",
+        "trades_per_day": "0.12",
+        "score": "4.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:52:09.497454+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8909642914",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.42                                     \u2502",
+      "metrics": {
+        "pf": "0.90",
+        "cagr": "-1.50%",
+        "max_drawdown": "8.84%",
+        "trades_per_day": "0.54",
+        "score": "4.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:52:04.561691+00:00"
+    },
+    {
+      "strategy": "AiHypothesis887d8815f3",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.71",
+        "cagr": "3.22%",
+        "max_drawdown": "2.10%",
+        "trades_per_day": "0.03",
+        "score": "6.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:51:58.737288+00:00"
+    },
+    {
+      "strategy": "AiHypothesis887d8815f3",
+      "status": "baseline_passed",
+      "note": "4                                      \u2502",
+      "metrics": {
+        "pf": "1.09",
+        "cagr": "0.61%",
+        "max_drawdown": "4.07%",
+        "trades_per_day": "0.2",
+        "score": "4.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:51:54.037866+00:00"
+    },
+    {
+      "strategy": "AiHypothesis887d8815f3",
+      "status": "baseline_passed",
+      "note": "\u2502 -1.75                                     \u2502",
+      "metrics": {
+        "pf": "0.69",
+        "cagr": "-5.25%",
+        "max_drawdown": "15.66%",
+        "trades_per_day": "0.81",
+        "score": "3.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:51:48.813640+00:00"
+    },
+    {
+      "strategy": "AiHypothesis87775dbac1",
+      "status": "baseline_passed",
+      "note": "\u2502 -1.91                                     \u2502",
+      "metrics": {
+        "pf": "0.72",
+        "cagr": "-5.65%",
+        "max_drawdown": "16.77%",
+        "trades_per_day": "0.86",
+        "score": "3.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:51:42.534753+00:00"
+    },
+    {
+      "strategy": "AiHypothesis87775dbac1",
+      "status": "baseline_passed",
+      "note": "\u2502 -6.90                                     \u2502",
+      "metrics": {
+        "pf": "0.52",
+        "cagr": "-24.05%",
+        "max_drawdown": "56.18%",
+        "trades_per_day": "2.64",
+        "score": "1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:51:34.028065+00:00"
+    },
+    {
+      "strategy": "AiHypothesis86d8373208",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "2.56",
+        "cagr": "2.90%",
+        "max_drawdown": "2.41%",
+        "trades_per_day": "0.01",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:51:18.004369+00:00"
+    },
+    {
+      "strategy": "AiHypothesis86d8373208",
+      "status": "baseline_passed",
+      "note": "8                                      \u2502",
+      "metrics": {
+        "pf": "1.24",
+        "cagr": "1.00%",
+        "max_drawdown": "3.98%",
+        "trades_per_day": "0.07",
+        "score": "4.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:51:13.128237+00:00"
+    },
+    {
+      "strategy": "AiHypothesis86d8373208",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.55                                     \u2502",
+      "metrics": {
+        "pf": "0.85",
+        "cagr": "-1.54%",
+        "max_drawdown": "9.08%",
+        "trades_per_day": "0.26",
+        "score": "3.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:51:07.632769+00:00"
+    },
+    {
+      "strategy": "AiHypothesis866284e313",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.13",
+        "cagr": "2.64%",
+        "max_drawdown": "2.68%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:51:01.498688+00:00"
+    },
+    {
+      "strategy": "AiHypothesis866284e313",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.27",
+        "cagr": "1.37%",
+        "max_drawdown": "3.87%",
+        "trades_per_day": "0.08",
+        "score": "4.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:50:56.545160+00:00"
+    },
+    {
+      "strategy": "AiHypothesis866284e313",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.12                                     \u2502",
+      "metrics": {
+        "pf": "0.96",
+        "cagr": "-0.44%",
+        "max_drawdown": "7.17%",
+        "trades_per_day": "0.3",
+        "score": "4.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:50:51.112065+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8626759f55",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "0.99",
+        "cagr": "-0.02%",
+        "max_drawdown": "3.68%",
+        "trades_per_day": "0.02",
+        "score": "3.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:50:44.729340+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8626759f55",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "0.99",
+        "cagr": "-0.09%",
+        "max_drawdown": "5.12%",
+        "trades_per_day": "0.08",
+        "score": "3.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:50:39.625461+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8626759f55",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -1.01                                     \u2502",
+      "metrics": {
+        "pf": "0.76",
+        "cagr": "-2.56%",
+        "max_drawdown": "9.11%",
+        "trades_per_day": "0.28",
+        "score": "3.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:50:34.249536+00:00"
+    },
+    {
+      "strategy": "AiHypothesis85dd48f38f",
+      "status": "baseline_passed",
+      "note": "28                                     \u2502",
+      "metrics": {
+        "pf": "0.76",
+        "cagr": "-0.58%",
+        "max_drawdown": "5.20%",
+        "trades_per_day": "0.03",
+        "score": "2.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:50:28.286626+00:00"
+    },
+    {
+      "strategy": "AiHypothesis85dd48f38f",
+      "status": "baseline_passed",
+      "note": "11                                     \u2502",
+      "metrics": {
+        "pf": "0.95",
+        "cagr": "-0.33%",
+        "max_drawdown": "5.04%",
+        "trades_per_day": "0.13",
+        "score": "3.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:50:23.409007+00:00"
+    },
+    {
+      "strategy": "AiHypothesis85dd48f38f",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.93                                     \u2502",
+      "metrics": {
+        "pf": "0.84",
+        "cagr": "-2.41%",
+        "max_drawdown": "7.99%",
+        "trades_per_day": "0.36",
+        "score": "3.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:50:17.863073+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8222f0d297",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.28",
+        "cagr": "2.87%",
+        "max_drawdown": "2.44%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:50:11.789325+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8222f0d297",
+      "status": "baseline_passed",
+      "note": "\u2502 0.46                                      \u2502",
+      "metrics": {
+        "pf": "1.25",
+        "cagr": "1.25%",
+        "max_drawdown": "4.51%",
+        "trades_per_day": "0.1",
+        "score": "4.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:50:06.444227+00:00"
+    },
+    {
+      "strategy": "AiHypothesis8222f0d297",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.21                                     \u2502",
+      "metrics": {
+        "pf": "0.94",
+        "cagr": "-0.66%",
+        "max_drawdown": "6.27%",
+        "trades_per_day": "0.37",
+        "score": "4.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:50:00.981941+00:00"
+    },
+    {
+      "strategy": "AiHypothesis81852d7f55",
+      "status": "baseline_passed",
+      "note": "7                                      \u2502",
+      "metrics": {
+        "pf": "3.02",
+        "cagr": "3.19%",
+        "max_drawdown": "1.92%",
+        "trades_per_day": "0.01",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:49:54.554897+00:00"
+    },
+    {
+      "strategy": "AiHypothesis81852d7f55",
+      "status": "baseline_passed",
+      "note": "2                                      \u2502",
+      "metrics": {
+        "pf": "1.42",
+        "cagr": "1.76%",
+        "max_drawdown": "2.55%",
+        "trades_per_day": "0.08",
+        "score": "5.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:49:49.570517+00:00"
+    },
+    {
+      "strategy": "AiHypothesis81852d7f55",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.25                                     \u2502",
+      "metrics": {
+        "pf": "0.93",
+        "cagr": "-0.77%",
+        "max_drawdown": "7.36%",
+        "trades_per_day": "0.31",
+        "score": "4.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:49:44.247632+00:00"
+    },
+    {
+      "strategy": "AiHypothesis803b69ccc7",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "2.11",
+        "cagr": "2.70%",
+        "max_drawdown": "1.89%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:49:37.952813+00:00"
+    },
+    {
+      "strategy": "AiHypothesis803b69ccc7",
+      "status": "baseline_passed",
+      "note": "6                                      \u2502",
+      "metrics": {
+        "pf": "1.31",
+        "cagr": "1.43%",
+        "max_drawdown": "3.91%",
+        "trades_per_day": "0.1",
+        "score": "4.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:49:32.818199+00:00"
+    },
+    {
+      "strategy": "AiHypothesis803b69ccc7",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.77                                     \u2502",
+      "metrics": {
+        "pf": "0.81",
+        "cagr": "-2.11%",
+        "max_drawdown": "9.53%",
+        "trades_per_day": "0.39",
+        "score": "3.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:49:27.638769+00:00"
+    },
+    {
+      "strategy": "AiHypothesis783e356191",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.40",
+        "cagr": "3.44%",
+        "max_drawdown": "3.16%",
+        "trades_per_day": "0.03",
+        "score": "6.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:49:22.264191+00:00"
+    },
+    {
+      "strategy": "AiHypothesis783e356191",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.10",
+        "cagr": "0.72%",
+        "max_drawdown": "6.47%",
+        "trades_per_day": "0.17",
+        "score": "4.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:49:17.726538+00:00"
+    },
+    {
+      "strategy": "AiHypothesis783e356191",
+      "status": "baseline_passed",
+      "note": "\u2502 -1.44                                     \u2502",
+      "metrics": {
+        "pf": "0.74",
+        "cagr": "-4.68%",
+        "max_drawdown": "14.43%",
+        "trades_per_day": "0.75",
+        "score": "3.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:49:12.732538+00:00"
+    },
+    {
+      "strategy": "AiHypothesis76d61cc650",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.89",
+        "cagr": "1.36%",
+        "max_drawdown": "1.73%",
+        "trades_per_day": "0.02",
+        "score": "6.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:49:06.605744+00:00"
+    },
+    {
+      "strategy": "AiHypothesis76d61cc650",
+      "status": "baseline_passed",
+      "note": "\u2502 0.27                                      \u2502",
+      "metrics": {
+        "pf": "1.17",
+        "cagr": "0.52%",
+        "max_drawdown": "2.55%",
+        "trades_per_day": "0.08",
+        "score": "4.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:49:01.801279+00:00"
+    },
+    {
+      "strategy": "AiHypothesis76d61cc650",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.88                                     \u2502",
+      "metrics": {
+        "pf": "0.77",
+        "cagr": "-1.82%",
+        "max_drawdown": "8.08%",
+        "trades_per_day": "0.3",
+        "score": "3.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:48:56.742422+00:00"
+    },
+    {
+      "strategy": "AiHypothesis72e1628c74",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.39",
+        "cagr": "3.43%",
+        "max_drawdown": "2.38%",
+        "trades_per_day": "0.03",
+        "score": "6.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:48:51.262029+00:00"
+    },
+    {
+      "strategy": "AiHypothesis72e1628c74",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.22",
+        "cagr": "1.60%",
+        "max_drawdown": "5.50%",
+        "trades_per_day": "0.18",
+        "score": "4.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:48:46.420118+00:00"
+    },
+    {
+      "strategy": "AiHypothesis72e1628c74",
+      "status": "baseline_passed",
+      "note": "\u2502 -1.38                                     \u2502",
+      "metrics": {
+        "pf": "0.76",
+        "cagr": "-4.79%",
+        "max_drawdown": "14.95%",
+        "trades_per_day": "0.89",
+        "score": "3.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:48:41.321855+00:00"
+    },
+    {
+      "strategy": "AiHypothesis7113f72f22",
+      "status": "baseline_passed",
+      "note": "5                                      \u2502",
+      "metrics": {
+        "pf": "2.40",
+        "cagr": "2.89%",
+        "max_drawdown": "2.89%",
+        "trades_per_day": "0.01",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:48:35.041698+00:00"
+    },
+    {
+      "strategy": "AiHypothesis7113f72f22",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.41",
+        "cagr": "2.05%",
+        "max_drawdown": "4.45%",
+        "trades_per_day": "0.07",
+        "score": "5.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:48:30.242902+00:00"
+    },
+    {
+      "strategy": "AiHypothesis7113f72f22",
+      "status": "baseline_passed",
+      "note": "00                                     \u2502",
+      "metrics": {
+        "pf": "0.99",
+        "cagr": "-0.06%",
+        "max_drawdown": "7.69%",
+        "trades_per_day": "0.28",
+        "score": "4.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:48:24.684966+00:00"
+    },
+    {
+      "strategy": "AiHypothesis6ede885b4d",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.18",
+        "cagr": "2.92%",
+        "max_drawdown": "2.53%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:48:18.944126+00:00"
+    },
+    {
+      "strategy": "AiHypothesis6ede885b4d",
+      "status": "baseline_passed",
+      "note": "2                                      \u2502",
+      "metrics": {
+        "pf": "1.05",
+        "cagr": "0.32%",
+        "max_drawdown": "6.88%",
+        "trades_per_day": "0.13",
+        "score": "4.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:48:13.949176+00:00"
+    },
+    {
+      "strategy": "AiHypothesis6ede885b4d",
+      "status": "baseline_passed",
+      "note": "      \u2502 -0.81                                     \u2502",
+      "metrics": {
+        "pf": "0.82",
+        "cagr": "-2.61%",
+        "max_drawdown": "10.15%",
+        "trades_per_day": "0.51",
+        "score": "3.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:48:08.868809+00:00"
+    },
+    {
+      "strategy": "AiHypothesis6d0a883c92",
+      "status": "baseline_passed",
+      "note": "\u2502 -2.35                                     \u2502",
+      "metrics": {
+        "pf": "0.67",
+        "cagr": "-5.14%",
+        "max_drawdown": "15.22%",
+        "trades_per_day": "0.81",
+        "score": "3.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:48:03.008152+00:00"
+    },
+    {
+      "strategy": "AiHypothesis6d0a883c92",
+      "status": "baseline_passed",
+      "note": "\u2502 -7.38                                     \u2502",
+      "metrics": {
+        "pf": "0.44",
+        "cagr": "-17.77%",
+        "max_drawdown": "44.46%",
+        "trades_per_day": "2.31",
+        "score": "1.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:47:55.260213+00:00"
+    },
+    {
+      "strategy": "AiHypothesis6b79206c8e",
+      "status": "baseline_passed",
+      "note": "19                                     \u2502",
+      "metrics": {
+        "pf": "0.86",
+        "cagr": "-0.46%",
+        "max_drawdown": "4.70%",
+        "trades_per_day": "0.04",
+        "score": "3.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:47:42.422953+00:00"
+    },
+    {
+      "strategy": "AiHypothesis6b79206c8e",
+      "status": "baseline_passed",
+      "note": "\u2502 0.15                                      \u2502",
+      "metrics": {
+        "pf": "1.04",
+        "cagr": "0.34%",
+        "max_drawdown": "3.93%",
+        "trades_per_day": "0.15",
+        "score": "4.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:47:37.592751+00:00"
+    },
+    {
+      "strategy": "AiHypothesis6b79206c8e",
+      "status": "baseline_passed",
+      "note": "\u2502 -1.52                                     \u2502",
+      "metrics": {
+        "pf": "0.73",
+        "cagr": "-4.23%",
+        "max_drawdown": "14.21%",
+        "trades_per_day": "0.44",
+        "score": "3.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:47:32.521158+00:00"
+    },
+    {
+      "strategy": "AiHypothesis69c256df3f",
+      "status": "baseline_passed",
+      "note": "\u2502 -6.06                                     \u2502",
+      "metrics": {
+        "pf": "0.54",
+        "cagr": "-23.70%",
+        "max_drawdown": "55.58%",
+        "trades_per_day": "2.7",
+        "score": "1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:47:26.606765+00:00"
+    },
+    {
+      "strategy": "AiHypothesis69c256df3f",
+      "status": "baseline_passed",
+      "note": "\u2502 -7.21                                     \u2502",
+      "metrics": {
+        "pf": "0.38",
+        "cagr": "-53.50%",
+        "max_drawdown": "89.95%",
+        "trades_per_day": "4.45",
+        "score": "1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:47:16.706643+00:00"
+    },
+    {
+      "strategy": "AiHypothesis694c6f9ad1",
+      "status": "baseline_passed",
+      "note": "\u2502 -3.38                                     \u2502",
+      "metrics": {
+        "pf": "0.61",
+        "cagr": "-8.84%",
+        "max_drawdown": "24.24%",
+        "trades_per_day": "1.3",
+        "score": "2.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:46:59.998966+00:00"
+    },
+    {
+      "strategy": "AiHypothesis694c6f9ad1",
+      "status": "baseline_passed",
+      "note": "\u2502 -9.92                                     \u2502",
+      "metrics": {
+        "pf": "0.38",
+        "cagr": "-33.86%",
+        "max_drawdown": "71.07%",
+        "trades_per_day": "3.82",
+        "score": "1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:46:51.591366+00:00"
+    },
+    {
+      "strategy": "AiHypothesis67a9b0debd",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.03",
+        "cagr": "2.53%",
+        "max_drawdown": "3.35%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:46:36.672211+00:00"
+    },
+    {
+      "strategy": "AiHypothesis67a9b0debd",
+      "status": "baseline_passed",
+      "note": "2                                      \u2502",
+      "metrics": {
+        "pf": "1.24",
+        "cagr": "1.13%",
+        "max_drawdown": "3.60%",
+        "trades_per_day": "0.09",
+        "score": "4.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:46:31.886827+00:00"
+    },
+    {
+      "strategy": "AiHypothesis67a9b0debd",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.51                                     \u2502",
+      "metrics": {
+        "pf": "0.87",
+        "cagr": "-1.51%",
+        "max_drawdown": "7.52%",
+        "trades_per_day": "0.37",
+        "score": "4.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:46:26.739553+00:00"
+    },
+    {
+      "strategy": "AiHypothesis656abed9bb",
+      "status": "baseline_passed",
+      "note": "14                                     \u2502",
+      "metrics": {
+        "pf": "0.89",
+        "cagr": "-0.35%",
+        "max_drawdown": "4.69%",
+        "trades_per_day": "0.04",
+        "score": "3.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:46:21.004262+00:00"
+    },
+    {
+      "strategy": "AiHypothesis656abed9bb",
+      "status": "baseline_passed",
+      "note": "1                                      \u2502",
+      "metrics": {
+        "pf": "1.00",
+        "cagr": "-0.02%",
+        "max_drawdown": "4.73%",
+        "trades_per_day": "0.14",
+        "score": "3.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:46:15.757235+00:00"
+    },
+    {
+      "strategy": "AiHypothesis656abed9bb",
+      "status": "baseline_passed",
+      "note": "\u2502 -1.43                                     \u2502",
+      "metrics": {
+        "pf": "0.74",
+        "cagr": "-4.00%",
+        "max_drawdown": "13.63%",
+        "trades_per_day": "0.41",
+        "score": "3.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:46:10.690770+00:00"
+    },
+    {
+      "strategy": "AiHypothesis64537ee540",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "2.90",
+        "cagr": "2.93%",
+        "max_drawdown": "1.45%",
+        "trades_per_day": "0.01",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:46:04.081255+00:00"
+    },
+    {
+      "strategy": "AiHypothesis64537ee540",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.04",
+        "cagr": "0.19%",
+        "max_drawdown": "5.56%",
+        "trades_per_day": "0.08",
+        "score": "3.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:45:59.046885+00:00"
+    },
+    {
+      "strategy": "AiHypothesis64537ee540",
+      "status": "baseline_passed",
+      "note": "alance)          \u2502 -0.57                                     \u2502",
+      "metrics": {
+        "pf": "0.84",
+        "cagr": "-1.51%",
+        "max_drawdown": "7.59%",
+        "trades_per_day": "0.29",
+        "score": "3.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:45:53.963861+00:00"
+    },
+    {
+      "strategy": "AiHypothesis6008cb0d6c",
+      "status": "baseline_passed",
+      "note": "80                                     \u2502",
+      "metrics": {
+        "pf": "0.47",
+        "cagr": "-1.48%",
+        "max_drawdown": "5.36%",
+        "trades_per_day": "0.04",
+        "score": "2.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:45:48.108544+00:00"
+    },
+    {
+      "strategy": "AiHypothesis6008cb0d6c",
+      "status": "baseline_passed",
+      "note": "      \u2502 0.13                                      \u2502",
+      "metrics": {
+        "pf": "1.03",
+        "cagr": "0.28%",
+        "max_drawdown": "3.23%",
+        "trades_per_day": "0.17",
+        "score": "4.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:45:43.085473+00:00"
+    },
+    {
+      "strategy": "AiHypothesis6008cb0d6c",
+      "status": "baseline_passed",
+      "note": "\u2502 -1.82                                     \u2502",
+      "metrics": {
+        "pf": "0.71",
+        "cagr": "-4.89%",
+        "max_drawdown": "15.63%",
+        "trades_per_day": "0.48",
+        "score": "3.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:45:37.910316+00:00"
+    },
+    {
+      "strategy": "AiHypothesis59b4fd369f",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "3.02",
+        "cagr": "3.78%",
+        "max_drawdown": "2.57%",
+        "trades_per_day": "0.02",
+        "score": "6.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:45:31.981120+00:00"
+    },
+    {
+      "strategy": "AiHypothesis59b4fd369f",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.18",
+        "cagr": "1.07%",
+        "max_drawdown": "4.75%",
+        "trades_per_day": "0.11",
+        "score": "4.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:45:26.929273+00:00"
+    },
+    {
+      "strategy": "AiHypothesis59b4fd369f",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.33                                     \u2502",
+      "metrics": {
+        "pf": "0.91",
+        "cagr": "-1.10%",
+        "max_drawdown": "8.47%",
+        "trades_per_day": "0.4",
+        "score": "4.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:45:21.703463+00:00"
+    },
+    {
+      "strategy": "AiHypothesis55ce7cd5c8",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -2.99                                     \u2502",
+      "metrics": {
+        "pf": "0.64",
+        "cagr": "-7.34%",
+        "max_drawdown": "20.77%",
+        "trades_per_day": "1.16",
+        "score": "2.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:45:15.615309+00:00"
+    },
+    {
+      "strategy": "AiHypothesis55ce7cd5c8",
+      "status": "baseline_passed",
+      "note": "\u2502 -9.90                                     \u2502",
+      "metrics": {
+        "pf": "0.38",
+        "cagr": "-29.78%",
+        "max_drawdown": "65.37%",
+        "trades_per_day": "3.46",
+        "score": "1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:45:07.332915+00:00"
+    },
+    {
+      "strategy": "AiHypothesis51afc467b9",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "1.78",
+        "cagr": "2.08%",
+        "max_drawdown": "1.98%",
+        "trades_per_day": "0.02",
+        "score": "6.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:44:53.040610+00:00"
+    },
+    {
+      "strategy": "AiHypothesis51afc467b9",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.18",
+        "cagr": "0.97%",
+        "max_drawdown": "4.43%",
+        "trades_per_day": "0.11",
+        "score": "4.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:44:48.152834+00:00"
+    },
+    {
+      "strategy": "AiHypothesis51afc467b9",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.97                                     \u2502",
+      "metrics": {
+        "pf": "0.78",
+        "cagr": "-2.77%",
+        "max_drawdown": "10.52%",
+        "trades_per_day": "0.46",
+        "score": "3.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:44:42.964193+00:00"
+    },
+    {
+      "strategy": "AiHypothesis5179dc02d5",
+      "status": "baseline_passed",
+      "note": "97                                     \u2502",
+      "metrics": {
+        "pf": "0.29",
+        "cagr": "-2.09%",
+        "max_drawdown": "6.71%",
+        "trades_per_day": "0.03",
+        "score": "2.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:44:37.027552+00:00"
+    },
+    {
+      "strategy": "AiHypothesis5179dc02d5",
+      "status": "baseline_passed",
+      "note": "08                                     \u2502",
+      "metrics": {
+        "pf": "0.96",
+        "cagr": "-0.22%",
+        "max_drawdown": "3.42%",
+        "trades_per_day": "0.1",
+        "score": "3.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:44:32.107053+00:00"
+    },
+    {
+      "strategy": "AiHypothesis5179dc02d5",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.95                                     \u2502",
+      "metrics": {
+        "pf": "0.81",
+        "cagr": "-2.37%",
+        "max_drawdown": "9.53%",
+        "trades_per_day": "0.28",
+        "score": "3.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:44:26.956814+00:00"
+    },
+    {
+      "strategy": "AiHypothesis50ecd3e1ca",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.27",
+        "cagr": "2.72%",
+        "max_drawdown": "2.85%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:44:21.056926+00:00"
+    },
+    {
+      "strategy": "AiHypothesis50ecd3e1ca",
+      "status": "baseline_passed",
+      "note": "5                                      \u2502",
+      "metrics": {
+        "pf": "1.20",
+        "cagr": "0.98%",
+        "max_drawdown": "4.73%",
+        "trades_per_day": "0.08",
+        "score": "4.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:44:16.126567+00:00"
+    },
+    {
+      "strategy": "AiHypothesis50ecd3e1ca",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.39                                     \u2502",
+      "metrics": {
+        "pf": "0.89",
+        "cagr": "-1.21%",
+        "max_drawdown": "8.03%",
+        "trades_per_day": "0.31",
+        "score": "4.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:44:10.849794+00:00"
+    },
+    {
+      "strategy": "AiHypothesis4f9224a81c",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.30",
+        "cagr": "2.91%",
+        "max_drawdown": "2.82%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:44:04.623055+00:00"
+    },
+    {
+      "strategy": "AiHypothesis4f9224a81c",
+      "status": "baseline_passed",
+      "note": "1                                      \u2502",
+      "metrics": {
+        "pf": "1.18",
+        "cagr": "1.06%",
+        "max_drawdown": "3.38%",
+        "trades_per_day": "0.15",
+        "score": "4.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:43:59.818353+00:00"
+    },
+    {
+      "strategy": "AiHypothesis4f9224a81c",
+      "status": "baseline_passed",
+      "note": "\u2502 -1.15                                     \u2502",
+      "metrics": {
+        "pf": "0.77",
+        "cagr": "-3.31%",
+        "max_drawdown": "10.79%",
+        "trades_per_day": "0.59",
+        "score": "3.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:43:54.605192+00:00"
+    },
+    {
+      "strategy": "AiHypothesis4b5bd44638",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.07",
+        "cagr": "2.60%",
+        "max_drawdown": "2.75%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:43:48.395765+00:00"
+    },
+    {
+      "strategy": "AiHypothesis4b5bd44638",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.29",
+        "cagr": "1.40%",
+        "max_drawdown": "4.89%",
+        "trades_per_day": "0.09",
+        "score": "4.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:43:42.990784+00:00"
+    },
+    {
+      "strategy": "AiHypothesis4b5bd44638",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.56                                     \u2502",
+      "metrics": {
+        "pf": "0.86",
+        "cagr": "-1.63%",
+        "max_drawdown": "8.75%",
+        "trades_per_day": "0.38",
+        "score": "4.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:43:37.367451+00:00"
+    },
+    {
+      "strategy": "AiHypothesis498b11beb5",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "3.42",
+        "cagr": "3.91%",
+        "max_drawdown": "1.94%",
+        "trades_per_day": "0.02",
+        "score": "6.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:43:31.404974+00:00"
+    },
+    {
+      "strategy": "AiHypothesis498b11beb5",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.22",
+        "cagr": "1.23%",
+        "max_drawdown": "3.09%",
+        "trades_per_day": "0.13",
+        "score": "4.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:43:26.469065+00:00"
+    },
+    {
+      "strategy": "AiHypothesis498b11beb5",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.96                                     \u2502",
+      "metrics": {
+        "pf": "0.80",
+        "cagr": "-2.81%",
+        "max_drawdown": "10.11%",
+        "trades_per_day": "0.54",
+        "score": "3.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:43:21.307585+00:00"
+    },
+    {
+      "strategy": "AiHypothesis472cb90169",
+      "status": "baseline_passed",
+      "note": "\u2502 -7.10                                     \u2502",
+      "metrics": {
+        "pf": "0.42",
+        "cagr": "-12.44%",
+        "max_drawdown": "33.16%",
+        "trades_per_day": "1.56",
+        "score": "2.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:43:15.195538+00:00"
+    },
+    {
+      "strategy": "AiHypothesis472cb90169",
+      "status": "baseline_passed",
+      "note": "\u2502 -13.18                                    \u2502",
+      "metrics": {
+        "pf": "0.23",
+        "cagr": "-53.44%",
+        "max_drawdown": "89.91%",
+        "trades_per_day": "4.08",
+        "score": "1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:43:07.036834+00:00"
+    },
+    {
+      "strategy": "AiHypothesis4702b4251f",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "2.61",
+        "cagr": "2.89%",
+        "max_drawdown": "2.27%",
+        "trades_per_day": "0.01",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:42:53.749520+00:00"
+    },
+    {
+      "strategy": "AiHypothesis4702b4251f",
+      "status": "baseline_passed",
+      "note": "5                                      \u2502",
+      "metrics": {
+        "pf": "1.08",
+        "cagr": "0.37%",
+        "max_drawdown": "5.27%",
+        "trades_per_day": "0.07",
+        "score": "3.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:42:48.522540+00:00"
+    },
+    {
+      "strategy": "AiHypothesis4702b4251f",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.41                                     \u2502",
+      "metrics": {
+        "pf": "0.88",
+        "cagr": "-1.23%",
+        "max_drawdown": "7.83%",
+        "trades_per_day": "0.27",
+        "score": "4.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:42:43.237714+00:00"
+    },
+    {
+      "strategy": "AiHypothesis4125d5a1e3",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "2.58",
+        "cagr": "3.40%",
+        "max_drawdown": "1.70%",
+        "trades_per_day": "0.03",
+        "score": "6.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:42:37.455016+00:00"
+    },
+    {
+      "strategy": "AiHypothesis4125d5a1e3",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.11",
+        "cagr": "0.84%",
+        "max_drawdown": "5.79%",
+        "trades_per_day": "0.14",
+        "score": "4.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:42:32.390092+00:00"
+    },
+    {
+      "strategy": "AiHypothesis4125d5a1e3",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.72                                     \u2502",
+      "metrics": {
+        "pf": "0.84",
+        "cagr": "-2.54%",
+        "max_drawdown": "9.53%",
+        "trades_per_day": "0.55",
+        "score": "3.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:42:27.042908+00:00"
+    },
+    {
+      "strategy": "AiHypothesis3f6c52412a",
+      "status": "baseline_passed",
+      "note": "34                                     \u2502",
+      "metrics": {
+        "pf": "0.58",
+        "cagr": "-0.62%",
+        "max_drawdown": "3.22%",
+        "trades_per_day": "0.01",
+        "score": "2.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:42:20.911061+00:00"
+    },
+    {
+      "strategy": "AiHypothesis3f6c52412a",
+      "status": "baseline_passed",
+      "note": "08                                     \u2502",
+      "metrics": {
+        "pf": "0.96",
+        "cagr": "-0.19%",
+        "max_drawdown": "3.71%",
+        "trades_per_day": "0.06",
+        "score": "3.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:42:16.123386+00:00"
+    },
+    {
+      "strategy": "AiHypothesis3f6c52412a",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.72                                     \u2502",
+      "metrics": {
+        "pf": "0.83",
+        "cagr": "-1.69%",
+        "max_drawdown": "6.75%",
+        "trades_per_day": "0.19",
+        "score": "3.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:42:10.870950+00:00"
+    },
+    {
+      "strategy": "AiHypothesis3c1192880a",
+      "status": "baseline_passed",
+      "note": "55                                     \u2502",
+      "metrics": {
+        "pf": "0.56",
+        "cagr": "-1.07%",
+        "max_drawdown": "5.24%",
+        "trades_per_day": "0.03",
+        "score": "2.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:42:05.116374+00:00"
+    },
+    {
+      "strategy": "AiHypothesis3c1192880a",
+      "status": "baseline_passed",
+      "note": "8                                      \u2502",
+      "metrics": {
+        "pf": "1.06",
+        "cagr": "0.41%",
+        "max_drawdown": "4.34%",
+        "trades_per_day": "0.12",
+        "score": "4.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:42:00.224363+00:00"
+    },
+    {
+      "strategy": "AiHypothesis3c1192880a",
+      "status": "baseline_passed",
+      "note": "alance)          \u2502 -0.73                                     \u2502",
+      "metrics": {
+        "pf": "0.87",
+        "cagr": "-1.87%",
+        "max_drawdown": "7.11%",
+        "trades_per_day": "0.34",
+        "score": "4.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:41:54.901109+00:00"
+    },
+    {
+      "strategy": "AiHypothesis38d5ce1065",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.68",
+        "cagr": "3.26%",
+        "max_drawdown": "1.91%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:41:49.055320+00:00"
+    },
+    {
+      "strategy": "AiHypothesis38d5ce1065",
+      "status": "baseline_passed",
+      "note": "9                                      \u2502",
+      "metrics": {
+        "pf": "1.22",
+        "cagr": "1.11%",
+        "max_drawdown": "4.46%",
+        "trades_per_day": "0.09",
+        "score": "4.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:41:44.041700+00:00"
+    },
+    {
+      "strategy": "AiHypothesis38d5ce1065",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.20                                     \u2502",
+      "metrics": {
+        "pf": "0.94",
+        "cagr": "-0.65%",
+        "max_drawdown": "6.79%",
+        "trades_per_day": "0.32",
+        "score": "4.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:41:38.685248+00:00"
+    },
+    {
+      "strategy": "AiHypothesis38274e8e38",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "3.22",
+        "cagr": "3.62%",
+        "max_drawdown": "2.28%",
+        "trades_per_day": "0.01",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:41:32.550987+00:00"
+    },
+    {
+      "strategy": "AiHypothesis38274e8e38",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.35",
+        "cagr": "1.72%",
+        "max_drawdown": "3.74%",
+        "trades_per_day": "0.08",
+        "score": "4.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:41:27.676542+00:00"
+    },
+    {
+      "strategy": "AiHypothesis38274e8e38",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.23                                     \u2502",
+      "metrics": {
+        "pf": "0.94",
+        "cagr": "-0.79%",
+        "max_drawdown": "7.15%",
+        "trades_per_day": "0.34",
+        "score": "4.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:41:22.301185+00:00"
+    },
+    {
+      "strategy": "AiHypothesis35397023f3",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "3.06",
+        "cagr": "3.86%",
+        "max_drawdown": "2.49%",
+        "trades_per_day": "0.02",
+        "score": "6.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:41:16.160476+00:00"
+    },
+    {
+      "strategy": "AiHypothesis35397023f3",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.10",
+        "cagr": "0.68%",
+        "max_drawdown": "6.62%",
+        "trades_per_day": "0.14",
+        "score": "4.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:41:11.209424+00:00"
+    },
+    {
+      "strategy": "AiHypothesis35397023f3",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.62                                     \u2502",
+      "metrics": {
+        "pf": "0.86",
+        "cagr": "-2.22%",
+        "max_drawdown": "9.19%",
+        "trades_per_day": "0.57",
+        "score": "4.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:41:05.763382+00:00"
+    },
+    {
+      "strategy": "AiHypothesis3377b9f83c",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "3.21",
+        "cagr": "3.32%",
+        "max_drawdown": "2.08%",
+        "trades_per_day": "0.01",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:40:59.183464+00:00"
+    },
+    {
+      "strategy": "AiHypothesis3377b9f83c",
+      "status": "baseline_passed",
+      "note": "0                                      \u2502",
+      "metrics": {
+        "pf": "1.17",
+        "cagr": "0.78%",
+        "max_drawdown": "4.29%",
+        "trades_per_day": "0.08",
+        "score": "4.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:40:54.390910+00:00"
+    },
+    {
+      "strategy": "AiHypothesis3377b9f83c",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.69                                     \u2502",
+      "metrics": {
+        "pf": "0.82",
+        "cagr": "-1.95%",
+        "max_drawdown": "9.35%",
+        "trades_per_day": "0.32",
+        "score": "3.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:40:49.177396+00:00"
+    },
+    {
+      "strategy": "AiHypothesis2f858d2552",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "0.93",
+        "cagr": "-0.10%",
+        "max_drawdown": "2.08%",
+        "trades_per_day": "0.01",
+        "score": "3.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:40:43.383916+00:00"
+    },
+    {
+      "strategy": "AiHypothesis2f858d2552",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "0.98",
+        "cagr": "-0.09%",
+        "max_drawdown": "5.38%",
+        "trades_per_day": "0.04",
+        "score": "3.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:40:38.713271+00:00"
+    },
+    {
+      "strategy": "AiHypothesis2f858d2552",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.51                                     \u2502",
+      "metrics": {
+        "pf": "0.82",
+        "cagr": "-1.13%",
+        "max_drawdown": "5.83%",
+        "trades_per_day": "0.13",
+        "score": "3.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:40:33.704602+00:00"
+    },
+    {
+      "strategy": "AiHypothesis2b65ec2bed",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "3.02",
+        "cagr": "3.64%",
+        "max_drawdown": "3.11%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:40:28.048774+00:00"
+    },
+    {
+      "strategy": "AiHypothesis2b65ec2bed",
+      "status": "baseline_passed",
+      "note": "9                                      \u2502",
+      "metrics": {
+        "pf": "1.33",
+        "cagr": "1.79%",
+        "max_drawdown": "3.56%",
+        "trades_per_day": "0.1",
+        "score": "4.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:40:22.919526+00:00"
+    },
+    {
+      "strategy": "AiHypothesis2b65ec2bed",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.10                                     \u2502",
+      "metrics": {
+        "pf": "0.97",
+        "cagr": "-0.38%",
+        "max_drawdown": "7.58%",
+        "trades_per_day": "0.39",
+        "score": "4.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:40:17.261489+00:00"
+    },
+    {
+      "strategy": "AiHypothesis2afb0a9df6",
+      "status": "baseline_passed",
+      "note": "6                                      \u2502",
+      "metrics": {
+        "pf": "1.04",
+        "cagr": "0.11%",
+        "max_drawdown": "3.11%",
+        "trades_per_day": "0.02",
+        "score": "3.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:40:10.332255+00:00"
+    },
+    {
+      "strategy": "AiHypothesis2afb0a9df6",
+      "status": "baseline_passed",
+      "note": "01                                     \u2502",
+      "metrics": {
+        "pf": "0.99",
+        "cagr": "-0.06%",
+        "max_drawdown": "3.72%",
+        "trades_per_day": "0.08",
+        "score": "3.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:40:05.373942+00:00"
+    },
+    {
+      "strategy": "AiHypothesis2afb0a9df6",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.74                                     \u2502",
+      "metrics": {
+        "pf": "0.81",
+        "cagr": "-1.67%",
+        "max_drawdown": "7.50%",
+        "trades_per_day": "0.27",
+        "score": "3.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:40:00.055723+00:00"
+    },
+    {
+      "strategy": "AiHypothesis299cc44c77",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "3.80",
+        "cagr": "3.53%",
+        "max_drawdown": "1.94%",
+        "trades_per_day": "0.01",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:39:54.090456+00:00"
+    },
+    {
+      "strategy": "AiHypothesis299cc44c77",
+      "status": "baseline_passed",
+      "note": "6                                      \u2502",
+      "metrics": {
+        "pf": "1.43",
+        "cagr": "1.95%",
+        "max_drawdown": "2.94%",
+        "trades_per_day": "0.07",
+        "score": "5.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:39:48.728538+00:00"
+    },
+    {
+      "strategy": "AiHypothesis299cc44c77",
+      "status": "baseline_passed",
+      "note": "15                                     \u2502",
+      "metrics": {
+        "pf": "0.95",
+        "cagr": "-0.51%",
+        "max_drawdown": "8.21%",
+        "trades_per_day": "0.24",
+        "score": "4.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:39:43.187512+00:00"
+    },
+    {
+      "strategy": "AiHypothesis27c11d4a03",
+      "status": "baseline_passed",
+      "note": "16                                     \u2502",
+      "metrics": {
+        "pf": "0.85",
+        "cagr": "-0.35%",
+        "max_drawdown": "2.16%",
+        "trades_per_day": "0.02",
+        "score": "3.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:39:37.003001+00:00"
+    },
+    {
+      "strategy": "AiHypothesis27c11d4a03",
+      "status": "baseline_passed",
+      "note": "13                                     \u2502",
+      "metrics": {
+        "pf": "0.94",
+        "cagr": "-0.31%",
+        "max_drawdown": "3.27%",
+        "trades_per_day": "0.06",
+        "score": "3.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:39:32.021020+00:00"
+    },
+    {
+      "strategy": "AiHypothesis27c11d4a03",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.62                                     \u2502",
+      "metrics": {
+        "pf": "0.83",
+        "cagr": "-1.26%",
+        "max_drawdown": "6.94%",
+        "trades_per_day": "0.19",
+        "score": "3.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:39:26.716302+00:00"
+    },
+    {
+      "strategy": "AiHypothesis25eb40c1ed",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "2.68",
+        "cagr": "3.41%",
+        "max_drawdown": "3.57%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:39:20.972715+00:00"
+    },
+    {
+      "strategy": "AiHypothesis25eb40c1ed",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.35",
+        "cagr": "1.78%",
+        "max_drawdown": "3.61%",
+        "trades_per_day": "0.09",
+        "score": "4.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:39:15.982742+00:00"
+    },
+    {
+      "strategy": "AiHypothesis25eb40c1ed",
+      "status": "baseline_passed",
+      "note": "09                                     \u2502",
+      "metrics": {
+        "pf": "0.97",
+        "cagr": "-0.36%",
+        "max_drawdown": "8.00%",
+        "trades_per_day": "0.34",
+        "score": "4.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:39:10.669678+00:00"
+    },
+    {
+      "strategy": "AiHypothesis259302ee7f",
+      "status": "baseline_passed",
+      "note": "\u2502 -9.81                                     \u2502",
+      "metrics": {
+        "pf": "0.39",
+        "cagr": "-25.23%",
+        "max_drawdown": "58.21%",
+        "trades_per_day": "2.54",
+        "score": "1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:39:04.491077+00:00"
+    },
+    {
+      "strategy": "AiHypothesis259302ee7f",
+      "status": "baseline_passed",
+      "note": "\u2502 -9.47                                     \u2502",
+      "metrics": {
+        "pf": "0.26",
+        "cagr": "-53.48%",
+        "max_drawdown": "89.94%",
+        "trades_per_day": "4.24",
+        "score": "1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:38:55.216860+00:00"
+    },
+    {
+      "strategy": "AiHypothesis1bba0dc4ae",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "4.34",
+        "cagr": "2.93%",
+        "max_drawdown": "1.48%",
+        "trades_per_day": "0.01",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:38:40.878077+00:00"
+    },
+    {
+      "strategy": "AiHypothesis1bba0dc4ae",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.46",
+        "cagr": "1.46%",
+        "max_drawdown": "1.61%",
+        "trades_per_day": "0.06",
+        "score": "5.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:38:35.608225+00:00"
+    },
+    {
+      "strategy": "AiHypothesis1bba0dc4ae",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.70                                     \u2502",
+      "metrics": {
+        "pf": "0.80",
+        "cagr": "-1.73%",
+        "max_drawdown": "7.92%",
+        "trades_per_day": "0.25",
+        "score": "3.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:38:30.258844+00:00"
+    },
+    {
+      "strategy": "AiHypothesis174aaca56e",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "0.72",
+        "cagr": "-0.89%",
+        "max_drawdown": "5.27%",
+        "trades_per_day": "0.03",
+        "score": "2.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:38:24.194807+00:00"
+    },
+    {
+      "strategy": "AiHypothesis174aaca56e",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.33                                     \u2502",
+      "metrics": {
+        "pf": "0.90",
+        "cagr": "-0.80%",
+        "max_drawdown": "4.78%",
+        "trades_per_day": "0.13",
+        "score": "3.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:38:19.058537+00:00"
+    },
+    {
+      "strategy": "AiHypothesis174aaca56e",
+      "status": "baseline_passed",
+      "note": "\u2502 -1.54                                     \u2502",
+      "metrics": {
+        "pf": "0.72",
+        "cagr": "-4.00%",
+        "max_drawdown": "12.77%",
+        "trades_per_day": "0.38",
+        "score": "3.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:38:12.206802+00:00"
+    },
+    {
+      "strategy": "AiHypothesis13bf99bfd2",
+      "status": "baseline_passed",
+      "note": "07                                     \u2502",
+      "metrics": {
+        "pf": "0.92",
+        "cagr": "-0.11%",
+        "max_drawdown": "2.79%",
+        "trades_per_day": "0.01",
+        "score": "3.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:38:05.687108+00:00"
+    },
+    {
+      "strategy": "AiHypothesis13bf99bfd2",
+      "status": "baseline_passed",
+      "note": "\u2502 0.26                                      \u2502",
+      "metrics": {
+        "pf": "1.13",
+        "cagr": "0.43%",
+        "max_drawdown": "2.74%",
+        "trades_per_day": "0.05",
+        "score": "4.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:38:00.590879+00:00"
+    },
+    {
+      "strategy": "AiHypothesis13bf99bfd2",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.82                                     \u2502",
+      "metrics": {
+        "pf": "0.75",
+        "cagr": "-1.71%",
+        "max_drawdown": "7.26%",
+        "trades_per_day": "0.17",
+        "score": "3.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:37:55.435920+00:00"
+    },
+    {
+      "strategy": "AiHypothesis0db0917b6c",
+      "status": "baseline_passed",
+      "note": "\u2502 0.88                                      \u2502",
+      "metrics": {
+        "pf": "2.51",
+        "cagr": "2.56%",
+        "max_drawdown": "1.68%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:37:49.478038+00:00"
+    },
+    {
+      "strategy": "AiHypothesis0db0917b6c",
+      "status": "baseline_passed",
+      "note": "4                                      \u2502",
+      "metrics": {
+        "pf": "1.06",
+        "cagr": "0.31%",
+        "max_drawdown": "5.21%",
+        "trades_per_day": "0.09",
+        "score": "3.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:37:44.390713+00:00"
+    },
+    {
+      "strategy": "AiHypothesis0db0917b6c",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.81                                     \u2502",
+      "metrics": {
+        "pf": "0.79",
+        "cagr": "-2.15%",
+        "max_drawdown": "9.08%",
+        "trades_per_day": "0.35",
+        "score": "3.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:37:39.124944+00:00"
+    },
+    {
+      "strategy": "AiHypothesis0b360da1b0",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "2.18",
+        "cagr": "2.64%",
+        "max_drawdown": "3.34%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:37:32.968837+00:00"
+    },
+    {
+      "strategy": "AiHypothesis0b360da1b0",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.33",
+        "cagr": "1.42%",
+        "max_drawdown": "4.35%",
+        "trades_per_day": "0.08",
+        "score": "4.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:37:27.972494+00:00"
+    },
+    {
+      "strategy": "AiHypothesis0b360da1b0",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.19                                     \u2502",
+      "metrics": {
+        "pf": "0.94",
+        "cagr": "-0.55%",
+        "max_drawdown": "6.64%",
+        "trades_per_day": "0.3",
+        "score": "4.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:37:22.741240+00:00"
+    },
+    {
+      "strategy": "AiHypothesis0748b01d88",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "2.24",
+        "cagr": "3.10%",
+        "max_drawdown": "2.21%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:37:16.777399+00:00"
+    },
+    {
+      "strategy": "AiHypothesis0748b01d88",
+      "status": "baseline_passed",
+      "note": "6                                      \u2502",
+      "metrics": {
+        "pf": "1.11",
+        "cagr": "0.76%",
+        "max_drawdown": "7.11%",
+        "trades_per_day": "0.14",
+        "score": "4.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:37:11.386958+00:00"
+    },
+    {
+      "strategy": "AiHypothesis0748b01d88",
+      "status": "baseline_passed",
+      "note": "\u2502 -0.87                                     \u2502",
+      "metrics": {
+        "pf": "0.82",
+        "cagr": "-2.94%",
+        "max_drawdown": "10.80%",
+        "trades_per_day": "0.58",
+        "score": "3.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:37:05.825126+00:00"
+    },
+    {
+      "strategy": "AiHypothesis06c4e1f3ce",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "2.22",
+        "cagr": "2.83%",
+        "max_drawdown": "2.52%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:36:59.500654+00:00"
+    },
+    {
+      "strategy": "AiHypothesis06c4e1f3ce",
+      "status": "baseline_passed",
+      "note": "                                 \u2502",
+      "metrics": {
+        "pf": "1.20",
+        "cagr": "1.07%",
+        "max_drawdown": "5.56%",
+        "trades_per_day": "0.11",
+        "score": "4.5"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:36:54.476264+00:00"
+    },
+    {
+      "strategy": "AiHypothesis06c4e1f3ce",
+      "status": "baseline_passed",
+      "note": ")          \u2502 -0.65                                     \u2502",
+      "metrics": {
+        "pf": "0.85",
+        "cagr": "-2.00%",
+        "max_drawdown": "9.13%",
+        "trades_per_day": "0.44",
+        "score": "4.0"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:36:49.224760+00:00"
+    },
+    {
+      "strategy": "AiHypothesis039a15bf1a",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.41",
+        "cagr": "3.35%",
+        "max_drawdown": "3.06%",
+        "trades_per_day": "0.02",
+        "score": "6.7"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:36:43.097383+00:00"
+    },
+    {
+      "strategy": "AiHypothesis039a15bf1a",
+      "status": "baseline_passed",
+      "note": "      \u2502 0.34                                      \u2502",
+      "metrics": {
+        "pf": "1.15",
+        "cagr": "0.96%",
+        "max_drawdown": "5.48%",
+        "trades_per_day": "0.14",
+        "score": "4.4"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:36:38.086756+00:00"
+    },
+    {
+      "strategy": "AiHypothesis039a15bf1a",
+      "status": "baseline_passed",
+      "note": "\u2502 -1.08                                     \u2502",
+      "metrics": {
+        "pf": "0.78",
+        "cagr": "-3.48%",
+        "max_drawdown": "12.03%",
+        "trades_per_day": "0.6",
+        "score": "3.6"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:36:32.665434+00:00"
+    },
+    {
+      "strategy": "AiHypothesis027a067e1b",
+      "status": "baseline_passed",
+      "note": "                            \u2502",
+      "metrics": {
+        "pf": "2.93",
+        "cagr": "3.76%",
+        "max_drawdown": "1.84%",
+        "trades_per_day": "0.02",
+        "score": "6.8"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:36:26.074768+00:00"
+    },
+    {
+      "strategy": "AiHypothesis027a067e1b",
+      "status": "baseline_passed",
+      "note": "3                                      \u2502",
+      "metrics": {
+        "pf": "1.10",
+        "cagr": "0.67%",
+        "max_drawdown": "5.42%",
+        "trades_per_day": "0.11",
+        "score": "4.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "4h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:36:21.037913+00:00"
+    },
+    {
+      "strategy": "AiHypothesis027a067e1b",
+      "status": "baseline_passed",
+      "note": "50                                     \u2502",
+      "metrics": {
+        "pf": "0.88",
+        "cagr": "-1.63%",
+        "max_drawdown": "9.56%",
+        "trades_per_day": "0.43",
+        "score": "4.1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "1h",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:36:15.301215+00:00"
+    },
+    {
+      "strategy": "AiHypothesisabbec17e2f",
+      "status": "baseline_passed",
+      "note": "\u2502 -2.42                                     \u2502",
+      "metrics": {
+        "pf": "0.68",
+        "cagr": "-6.34%",
+        "max_drawdown": "19.03%",
+        "trades_per_day": "0.91",
+        "score": "2.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:20:04.152028+00:00"
+    },
+    {
+      "strategy": "AiHypothesise211e2d1eb",
+      "status": "baseline_failed",
+      "note": "2026-08-17 12:19:54,260 - freqtrade - INFO - freqtrade 2026.7",
+      "metrics": {},
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:19:58.877127+00:00"
+    },
+    {
+      "strategy": "AiHypothesisbd7c6f7610",
+      "status": "baseline_failed",
+      "note": "2026-08-17 12:19:44,500 - freqtrade - INFO - freqtrade 2026.7",
+      "metrics": {},
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:19:49.392317+00:00"
+    },
+    {
+      "strategy": "AiHypothesisabbec17e2f",
+      "status": "baseline_failed",
+      "note": "2026-08-17 12:19:40,475 - freqtrade - INFO - freqtrade 2026.7",
+      "metrics": {},
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:19:45.735842+00:00"
+    },
+    {
+      "strategy": "AiHypothesisbd7c6f7610",
+      "status": "baseline_passed",
+      "note": "\u2502 -2.42                                     \u2502",
+      "metrics": {
+        "pf": "0.68",
+        "cagr": "-6.34%",
+        "max_drawdown": "19.03%",
+        "trades_per_day": "0.91",
+        "score": "2.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:19:24.681433+00:00"
+    },
+    {
+      "strategy": "AiHypothesise211e2d1eb",
+      "status": "baseline_passed",
+      "note": "\u2502 -2.42                                     \u2502",
+      "metrics": {
+        "pf": "0.68",
+        "cagr": "-6.34%",
+        "max_drawdown": "19.03%",
+        "trades_per_day": "0.91",
+        "score": "2.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:19:17.688680+00:00"
+    },
+    {
+      "strategy": "AiHypothesis51afc467b9",
+      "status": "baseline_passed",
+      "note": "\u2502 -3.34                                     \u2502",
+      "metrics": {
+        "pf": "0.64",
+        "cagr": "-11.12%",
+        "max_drawdown": "29.97%",
+        "trades_per_day": "1.42",
+        "score": "2.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:07:50.684292+00:00"
+    },
+    {
+      "strategy": "AiHypothesis51afc467b9",
+      "status": "baseline_passed",
+      "note": "\u2502 -4.04                                     \u2502",
+      "metrics": {
+        "pf": "0.62",
+        "cagr": "-11.36%",
+        "max_drawdown": "30.57%",
+        "trades_per_day": "1.68",
+        "score": "2.2"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T12:07:17.538858+00:00"
+    },
+    {
+      "strategy": "AiHypothesis0748b01d88",
+      "status": "baseline_passed",
+      "note": "\u2502 -5.75                                     \u2502",
+      "metrics": {
+        "pf": "0.49",
+        "cagr": "-13.94%",
+        "max_drawdown": "36.40%",
+        "trades_per_day": "1.65",
+        "score": "1.9"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T11:35:35.974434+00:00"
+    },
+    {
+      "strategy": "AiHypothesis0748b01d88",
+      "status": "baseline_passed",
+      "note": "\u2502 -11.13                                    \u2502",
+      "metrics": {
+        "pf": "0.31",
+        "cagr": "-53.48%",
+        "max_drawdown": "89.93%",
+        "trades_per_day": "4.1",
+        "score": "1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T11:35:26.832517+00:00"
+    },
+    {
+      "strategy": "AiHypothesis81852d7f55",
+      "status": "baseline_passed",
+      "note": "\u2502 -4.94                                     \u2502",
+      "metrics": {
+        "pf": "0.56",
+        "cagr": "-18.19%",
+        "max_drawdown": "45.24%",
+        "trades_per_day": "2.18",
+        "score": "1.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T11:21:34.809777+00:00"
+    },
+    {
+      "strategy": "AiHypothesis81852d7f55",
+      "status": "baseline_passed",
+      "note": "\u2502 -9.18                                     \u2502",
+      "metrics": {
+        "pf": "0.42",
+        "cagr": "-53.46%",
+        "max_drawdown": "89.92%",
+        "trades_per_day": "4.59",
+        "score": "1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T11:21:23.873807+00:00"
+    },
+    {
+      "strategy": "AiHypothesis3377b9f83c",
+      "status": "baseline_passed",
+      "note": "\u2502 -3.31                                     \u2502",
+      "metrics": {
+        "pf": "0.65",
+        "cagr": "-11.04%",
+        "max_drawdown": "29.61%",
+        "trades_per_day": "1.42",
+        "score": "2.3"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "15m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T11:13:25.280694+00:00"
+    },
+    {
+      "strategy": "AiHypothesis3377b9f83c",
+      "status": "baseline_passed",
+      "note": "\u2502 -9.05                                     \u2502",
+      "metrics": {
+        "pf": "0.46",
+        "cagr": "-53.45%",
+        "max_drawdown": "89.91%",
+        "trades_per_day": "4.25",
+        "score": "1"
+      },
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "timerange": "20230817-20260817",
+      "created_at": "2026-08-17T11:13:15.801156+00:00"
+    }
+  ]
+}

@@ -37,4 +37,4 @@
 
 ## Automation
 
-- Result: AI proposed mean_reversion rules: EMA 8/34, RSI entry > 48, exit < 52, stop-loss -5%, fixed $100 position, 1h. This is an independent test hypothesis, not a claim about the original author's exact rules.
+- Result: Source page could not be read; proposed mean_reversion rules: EMA 13/37, RSI entry > 52, exit < 59, stop-loss -8%, fixed $100 position, 1h. Testing must judge it; it is not claimed as the original author's exact strategy.

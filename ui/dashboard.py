@@ -12,7 +12,7 @@ from typing import Any
 from research_engine.collectors import classify_market
 from strategy_adapter.adapters import write_adapter
 from strategy_adapter.queue import load as load_queue
-from testing_engine.policy import candidate_timeframes, public_policy
+from testing_engine.policy import MIN_PROFIT_FACTOR, MIN_TRADES_PER_DAY, candidate_timeframes, public_policy
 
 
 def deleted_sources_path(project_root: Path) -> Path:
@@ -171,9 +171,16 @@ def read_testing_strategies(project_root: Path, reports: list[dict[str, Any]]) -
                 return float(report.get("metrics", {}).get("score", "-1"))
             except (TypeError, ValueError):
                 return -1
-        best = max(passed or completed or list(timeframe_reports.values()), key=rank, default={})
+        def meets_goal(report: dict[str, Any]) -> bool:
+            try:
+                metrics = report.get("metrics", {})
+                return float(str(metrics.get("pf", "0")).replace("%", "")) > MIN_PROFIT_FACTOR and float(str(metrics.get("trades_per_day", "0")).replace("%", "")) >= MIN_TRADES_PER_DAY
+            except (TypeError, ValueError):
+                return False
+        qualifying = [report for report in passed if meets_goal(report)]
+        best = max(qualifying or passed or completed or list(timeframe_reports.values()), key=rank, default={})
         if len(completed) == len(comparison_timeframes):
-            status = "tested"
+            status = "passed_goal" if qualifying else "failed_goal"
         elif any(report.get("status") == "running" for report in timeframe_reports.values()):
             status = "running"
         else:
@@ -186,6 +193,7 @@ def read_testing_strategies(project_root: Path, reports: list[dict[str, Any]]) -
             "comparison_timeframes": list(comparison_timeframes),
             "completed_timeframes": len(completed),
             "status": status,
+            "qualifies": bool(qualifying),
             "metrics": best.get("metrics", {}),
             "timerange": report.get("timerange", public_policy()["timerange"]),
         })
@@ -225,12 +233,10 @@ def dashboard_data(project_root: Path) -> dict[str, Any]:
     )
     queue = load_queue(project_root)
     source_counts = Counter(record["source"] for record in records)
-    testing_reports = []
-    for path in (project_root / "data" / "testing" / "history").glob("*.json"):
-        try:
-            testing_reports.append(json.loads(path.read_text(encoding="utf-8")))
-        except (OSError, json.JSONDecodeError):
-            continue
+    # Import here to keep the dashboard's portable-history behavior exactly the
+    # same as the autonomous worker's skip logic.
+    from testing_engine.__main__ import read_shared_history
+    testing_reports = read_shared_history(project_root)
     jobs = []
     for path in (project_root / "data" / "testing" / "jobs").glob("*.json"):
         try:

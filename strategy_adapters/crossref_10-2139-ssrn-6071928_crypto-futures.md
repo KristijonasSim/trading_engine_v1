@@ -37,4 +37,4 @@
 
 ## Automation
 
-- Result: AI proposed factor_momentum rules: EMA 13/55, RSI entry > 52, exit < 47, stop-loss -6%, fixed $100 position, 1h. This is an independent test hypothesis, not a claim about the original author's exact rules.
+- Result: Source page could not be read; proposed factor_momentum rules: EMA 18/57, RSI entry > 56, exit < 52, stop-loss -7%, fixed $100 position, 1h. Testing must judge it; it is not claimed as the original author's exact strategy.

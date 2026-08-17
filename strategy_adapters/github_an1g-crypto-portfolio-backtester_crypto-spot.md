@@ -37,4 +37,4 @@
 
 ## Automation
 
-- Result: Source page could not be read; proposed balanced_momentum rules: EMA 20/50, RSI entry > 55, exit < 45, stop-loss -8%, fixed $100 position, 1h. Testing must judge it; it is not claimed as the original author's exact strategy.
+- Result: Source page could not be read; proposed balanced_momentum rules: EMA 12/42, RSI entry > 58, exit < 49, stop-loss -9%, fixed $100 position, 1h. Testing must judge it; it is not claimed as the original author's exact strategy.

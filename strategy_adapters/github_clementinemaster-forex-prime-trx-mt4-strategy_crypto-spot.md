@@ -37,4 +37,4 @@
 
 ## Automation
 
-- Result: Public source inspected; proposed breakout_momentum rules: EMA 6/30, RSI entry > 60, exit < 45, stop-loss -6%, fixed $100 position, 5m. Testing must judge it; it is not claimed as the original author's exact strategy.
+- Result: Claude reviewed the public source; proposed trend_strength rules: EMA 5/60, RSI entry > 63, exit < 48, stop-loss -5%, fixed $100 position, 4h. Testing must judge it; it is not claimed as the original author's exact strategy.

@@ -8,6 +8,8 @@ data/
 results/
 testing_engine/data/
 testing_engine/backtest_results/
+# Per-timeframe configs created only while a Freqtrade comparison is running.
+testing_engine/configs/.*.json
 
 # Python files
 __pycache__/

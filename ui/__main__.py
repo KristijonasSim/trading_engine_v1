@@ -20,7 +20,7 @@ from .dashboard import create_adapter, dashboard_data, delete_source
 from testing_engine.__main__ import update_job, validate
 from testing_engine.worker import run_ready
 from strategy_adapter.queue import add as add_to_queue
-from strategy_adapter.automatic import adapt_all, adapt_one, find_all_rules, find_rules
+from strategy_adapter.automatic import adapt_all, adapt_one, find_all_rules, find_rules, redesign_all_hypotheses
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 STATIC_DIR = Path(__file__).resolve().parent / "static"
@@ -34,6 +34,11 @@ def recover_and_test(filename: str) -> None:
 def recover_all_and_test() -> None:
     find_all_rules(PROJECT_ROOT)
     run_ready(PROJECT_ROOT)
+
+
+def redesign_and_retest() -> None:
+    redesign_all_hypotheses(PROJECT_ROOT)
+    run_ready(PROJECT_ROOT, force=True)
 
 
 class DashboardHandler(SimpleHTTPRequestHandler):
@@ -57,7 +62,7 @@ class DashboardHandler(SimpleHTTPRequestHandler):
         super().do_GET()
 
     def do_POST(self) -> None:
-        if urlparse(self.path).path not in {"/api/search", "/api/delete-source", "/api/create-adapter", "/api/queue-adapter", "/api/start-test", "/api/adapt-all", "/api/adapt-one", "/api/find-rules", "/api/find-all-rules"}:
+        if urlparse(self.path).path not in {"/api/search", "/api/delete-source", "/api/create-adapter", "/api/queue-adapter", "/api/start-test", "/api/adapt-all", "/api/adapt-one", "/api/find-rules", "/api/find-all-rules", "/api/redesign-retest-all"}:
             self.send_error(HTTPStatus.NOT_FOUND)
             return
         try:
@@ -82,6 +87,8 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             self.handle_find_rules(payload)
         elif urlparse(self.path).path == "/api/find-all-rules":
             self.handle_find_all_rules()
+        elif urlparse(self.path).path == "/api/redesign-retest-all":
+            self.handle_redesign_retest_all()
         else:
             self.handle_start_test(payload)
 
@@ -201,6 +208,10 @@ class DashboardHandler(SimpleHTTPRequestHandler):
     def handle_find_all_rules(self) -> None:
         threading.Thread(target=recover_all_and_test, daemon=True).start()
         self.send_json({"message": "Autonomous rule-recovery and testing worker started.", "dashboard": dashboard_data(PROJECT_ROOT)})
+
+    def handle_redesign_retest_all(self) -> None:
+        threading.Thread(target=redesign_and_retest, daemon=True).start()
+        self.send_json({"message": "Source-specific redesign and forced timeframe retest started.", "dashboard": dashboard_data(PROJECT_ROOT)})
 
     def log_message(self, format: str, *args) -> None:
         message = format % args

@@ -2,9 +2,9 @@
 
 ## Status
 
-- Status: `duplicate_hypothesis`
+- Status: `ai_hypothesis`
 - Target: `crypto-spot`
-- Testing handoff: `archived`
+- Testing handoff: `ready`
 
 ## Original source
 
@@ -37,4 +37,4 @@
 
 ## Automation
 
-- Result: Not sent to Testing: it duplicates AI hypothesis AiHypothesis0b360da1b0 for the same 1h EMA/RSI rule family.
+- Result: Claude reviewed the public source; proposed mean_reversion rules: EMA 9/47, RSI entry > 33, exit < 53, stop-loss -3%, fixed $100 position, 1h. Testing must judge it; it is not claimed as the original author's exact strategy.

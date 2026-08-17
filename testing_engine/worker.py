@@ -5,25 +5,20 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from .__main__ import run_timeframe_comparison
+from .__main__ import read_shared_history, run_timeframe_comparison
 from .policy import candidate_timeframes
 
 
 TERMINAL = {"baseline_passed", "baseline_failed", "rejected", "nautilus_queue"}
 
 
-def run_ready(project_root: Path) -> list[str]:
-    history = project_root / "data" / "testing" / "history"
+def run_ready(project_root: Path, force: bool = False) -> list[str]:
     latest: dict[tuple[str, str], tuple[str, str]] = {}
-    for path in history.glob("*.json"):
-        try:
-            report = json.loads(path.read_text(encoding="utf-8"))
-        except (OSError, json.JSONDecodeError):
-            continue
+    for report in read_shared_history(project_root):
         name = report.get("strategy")
         if name and report.get("status"):
             timeframe = str(report.get("timeframe") or "")
-            timestamp = str(report.get("created_at", path.name))
+            timestamp = str(report.get("created_at", ""))
             key = (str(name), timeframe)
             if key not in latest or timestamp > latest[key][0]:
                 latest[key] = (timestamp, str(report["status"]))
@@ -37,7 +32,7 @@ def run_ready(project_root: Path) -> list[str]:
         except (OSError, json.JSONDecodeError):
             suggested = "1h"
         timeframes = candidate_timeframes(suggested)
-        missing = tuple(
+        missing = timeframes if force else tuple(
             timeframe for timeframe in timeframes
             if latest.get((strategy.stem, timeframe), ("", ""))[1] not in TERMINAL
         )

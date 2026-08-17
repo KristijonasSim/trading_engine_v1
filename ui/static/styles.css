@@ -31,6 +31,8 @@ button.danger { background: transparent; border-color: #8d4a4f; color: #ffbbc0; 
 button.danger.small-button { padding: 5px 8px; margin: 0; }
 .message { min-height: 24px; color: #83decf; }
 .source-counts { display: flex; gap: 8px; flex-wrap: wrap; }
+.suggestion-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+.suggestion-row .source-counts { flex: 1; }
 .records { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
 .record, .card { border: 1px solid #2d383b; border-radius: 12px; padding: 16px; background: #121719; }
 .record a { display: block; color: #eafbf8; font-weight: 700; margin: 10px 0; text-decoration: none; }

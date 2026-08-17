@@ -2,9 +2,9 @@
 
 ## Status
 
-- Status: `duplicate_hypothesis`
+- Status: `ai_hypothesis`
 - Target: `crypto-spot`
-- Testing handoff: `archived`
+- Testing handoff: `ready`
 
 ## Original source
 
@@ -37,4 +37,4 @@
 
 ## Automation
 
-- Result: Not sent to Testing: it duplicates AI hypothesis AiHypothesis06c4e1f3ce for the same 1h EMA/RSI rule family.
+- Result: Source page could not be read; proposed breakout_momentum rules: EMA 12/50, RSI entry > 61, exit < 51, stop-loss -6%, fixed $100 position, 1h. Testing must judge it; it is not claimed as the original author's exact strategy.

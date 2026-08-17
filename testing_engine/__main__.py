@@ -14,6 +14,83 @@ ROOT = Path(__file__).resolve().parent.parent
 ENGINE = ROOT / "testing_engine"
 HISTORY = ROOT / "data" / "testing" / "history"
 JOBS = ROOT / "data" / "testing" / "jobs"
+# Unlike the raw local console reports, this compact ledger is committed with the
+# project.  It lets a clone know exactly which strategy/timeframe combinations
+# have already been evaluated, without committing market data or megabytes of
+# Freqtrade output.
+SHARED_HISTORY = ENGINE / "test_history.json"
+
+
+def read_shared_history(project_root: Path | None = None) -> list[dict]:
+    """Return the portable test ledger plus any newer local reports."""
+    root = project_root or ROOT
+    shared_history = root / "testing_engine" / "test_history.json"
+    history = root / "data" / "testing" / "history"
+    latest: dict[tuple[str, str], dict] = {}
+    try:
+        payload = json.loads(shared_history.read_text(encoding="utf-8"))
+        shared_reports = payload.get("reports", [])
+    except (OSError, json.JSONDecodeError):
+        shared_reports = []
+    for report in shared_reports:
+        if not isinstance(report, dict) or not report.get("strategy"):
+            continue
+        key = (str(report["strategy"]), str(report.get("timeframe") or ""))
+        latest[key] = report
+    for path in history.glob("*.json"):
+        try:
+            report = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if not report.get("strategy"):
+            continue
+        key = (str(report["strategy"]), str(report.get("timeframe") or ""))
+        previous = latest.get(key, {})
+        if str(report.get("created_at", path.name)) >= str(previous.get("created_at", "")):
+            latest[key] = report
+    return list(latest.values())
+
+
+def write_shared_history(reports: list[dict], project_root: Path | None = None) -> None:
+    root = project_root or ROOT
+    shared_history = root / "testing_engine" / "test_history.json"
+    # The portable file intentionally stores results, not raw terminal output.
+    # Raw output remains in ignored local history for debugging, while this stays
+    # small enough to commit and carry between computers.
+    portable = []
+    for report in reports:
+        if not report.get("strategy") or not report.get("timeframe"):
+            continue
+        portable.append({
+            "strategy": report["strategy"],
+            "status": report.get("status", ""),
+            "note": str(report.get("note", "")).splitlines()[0][:240],
+            "metrics": report.get("metrics", {}),
+            "pair": report.get("pair", BTC_PAIR),
+            "timeframe": report["timeframe"],
+            "timerange": report.get("timerange", three_year_timerange()),
+            "created_at": report.get("created_at", ""),
+        })
+    shared_history.parent.mkdir(parents=True, exist_ok=True)
+    shared_history.write_text(
+        json.dumps(
+            {
+                "version": 1,
+                "description": "Portable latest Freqtrade result per strategy and timeframe.",
+                "reports": sorted(portable, key=lambda item: item.get("created_at", ""), reverse=True),
+            },
+            indent=2,
+        ) + "\n",
+        encoding="utf-8",
+    )
+
+
+def sync_shared_history() -> int:
+    """Rebuild the portable ledger from local raw reports, once or after imports."""
+    reports = read_shared_history()
+    write_shared_history(reports)
+    print(f"Synced {sum(bool(item.get('timeframe')) for item in reports)} portable test results to {SHARED_HISTORY.relative_to(ROOT)}")
+    return 0
 
 
 def strategy_paths(name: str) -> tuple[Path, Path]:
@@ -25,7 +102,16 @@ def record(name: str, status: str, note: str, metrics: dict[str, str] | None = N
     stamp = datetime.now(UTC)
     suffix = f"_{timeframe}" if timeframe else ""
     path = HISTORY / f"{stamp.strftime('%Y%m%dT%H%M%S%fZ')}_{name}{suffix}_{status}.json"
-    path.write_text(json.dumps({"strategy": name, "status": status, "note": note, "metrics": metrics or {}, "pair": BTC_PAIR, "timeframe": timeframe, "timerange": three_year_timerange(), "created_at": stamp.isoformat()}, indent=2) + "\n", encoding="utf-8")
+    report = {"strategy": name, "status": status, "note": note, "metrics": metrics or {}, "pair": BTC_PAIR, "timeframe": timeframe, "timerange": three_year_timerange(), "created_at": stamp.isoformat()}
+    path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    # Replace only this strategy/timeframe's previous portable result.
+    key = (name, str(timeframe or ""))
+    reports = [
+        item for item in read_shared_history()
+        if (str(item.get("strategy")), str(item.get("timeframe") or "")) != key
+    ]
+    reports.append(report)
+    write_shared_history(reports, ROOT)
     return path
 
 
@@ -244,6 +330,7 @@ def main() -> int:
     record_parser.add_argument("strategy")
     record_parser.add_argument("status", choices=["baseline_failed", "tuning", "rejected", "nautilus_queue"])
     record_parser.add_argument("note")
+    commands.add_parser("sync-history", help="Create the portable test-history ledger from local reports")
     args = parser.parse_args()
     if args.command == "validate":
         return validate(args.strategy)
@@ -252,6 +339,8 @@ def main() -> int:
     if args.command == "run-timeframe-comparison":
         run_timeframe_comparison(args.strategy)
         return 0
+    if args.command == "sync-history":
+        return sync_shared_history()
     print(record(args.strategy, args.status, args.note))
     return 0
 

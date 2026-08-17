@@ -37,4 +37,4 @@
 
 ## Automation
 
-- Result: Public source inspected; created AI hypothesis AiHypothesisa4d1676ef6 on 5m. It must be judged by Testing Engine, not assumed to reproduce the source.
+- Result: Claude reviewed the public source; proposed trend_strength rules: EMA 3/33, RSI entry > 53, exit < 36, stop-loss -4%, fixed $100 position, 15m. Testing must judge it; it is not claimed as the original author's exact strategy.

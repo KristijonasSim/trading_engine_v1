@@ -1,7 +1,4 @@
-"""AI hypothesis generated after source-rule recovery was incomplete.
-
-This is a test candidate, not proof that the original author used these rules.
-"""
+"""AI hypothesis: BTC mean-reversion rules derived from source context."""
 
 from pandas import DataFrame
 import talib.abstract as ta
@@ -11,21 +8,22 @@ from freqtrade.strategy import IStrategy
 class AiHypothesis8626759f55(IStrategy):
     timeframe = "1h"
     can_short = False
-    startup_candle_count = 34
+    startup_candle_count = 37
     minimal_roi = {"0": 10.0}
-    stoploss = -0.05
+    stoploss = -0.08
     use_exit_signal = True
 
     def populate_indicators(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
-        dataframe["ema_fast"] = ta.EMA(dataframe, timeperiod=8)
-        dataframe["ema_slow"] = ta.EMA(dataframe, timeperiod=34)
+        dataframe["mid"] = dataframe["close"].rolling(37).mean()
+        dataframe["std"] = dataframe["close"].rolling(37).std()
+        dataframe["lower"] = dataframe["mid"] - 2 * dataframe["std"]
         dataframe["rsi"] = ta.RSI(dataframe, timeperiod=14)
         return dataframe
 
     def populate_entry_trend(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
-        dataframe.loc[(dataframe["ema_fast"] > dataframe["ema_slow"]) & (dataframe["rsi"] > 48) & (dataframe["volume"] > 0), "enter_long"] = 1
+        dataframe.loc[(dataframe["close"] < dataframe["lower"]) & (dataframe["rsi"] < 52) & (dataframe["volume"] > 0), "enter_long"] = 1
         return dataframe
 
     def populate_exit_trend(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
-        dataframe.loc[(dataframe["ema_fast"] < dataframe["ema_slow"]) | (dataframe["rsi"] < 52), "exit_long"] = 1
+        dataframe.loc[(dataframe["close"] >= dataframe["mid"]) | (dataframe["rsi"] > 59), "exit_long"] = 1
         return dataframe

@@ -37,4 +37,4 @@
 
 ## Automation
 
-- Result: AI proposed slow_momentum rules: EMA 20/60, RSI entry > 56, exit < 44, stop-loss -10%, fixed $100 position, 1h. This is an independent test hypothesis, not a claim about the original author's exact rules.
+- Result: Source page could not be read; proposed slow_momentum rules: EMA 16/61, RSI entry > 57, exit < 47, stop-loss -13%, fixed $100 position, 1h. Testing must judge it; it is not claimed as the original author's exact strategy.

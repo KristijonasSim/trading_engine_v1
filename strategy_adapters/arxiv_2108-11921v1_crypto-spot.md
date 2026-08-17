@@ -37,4 +37,4 @@
 
 ## Automation
 
-- Result: Skipped automatically: entry, exit, stop-loss, or position-size rules are not complete enough to create honest test code.
+- Result: Claude reviewed the public source; proposed trend_strength rules: EMA 18/56, RSI entry > 61, exit < 42, stop-loss -6%, fixed $100 position, 1d. Testing must judge it; it is not claimed as the original author's exact strategy.

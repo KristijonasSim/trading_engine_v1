@@ -7,13 +7,13 @@
     "source_title": "Crypto Momentum Strategy",
     "adapter_file": "arxiv_2108-11921v1_crypto-spot.md",
     "hypothesis": true,
-    "family": "ema_rsi_momentum_1d"
+    "family": "trend_strength_1d"
   },
   "AiHypothesis4b5bd44638": {
     "source_title": "Crypto Time-Series Momentum",
     "adapter_file": "arxiv_2602-11708v1_crypto-spot.md",
     "hypothesis": true,
-    "family": "ema_rsi_momentum_4h"
+    "family": "trend_strength_4h"
   },
   "AiHypothesis4f9224a81c": {
     "source_title": "Automated Strategy Discovery in Crypto Perpetuals via Dynamic Factor Ensembles and Auditable Evaluation",
@@ -25,13 +25,13 @@
     "source_title": "allenfrostline Momentum",
     "adapter_file": "github_allenfrostline-cryptonews_crypto-spot.md",
     "hypothesis": true,
-    "family": "ema_rsi_momentum_1h"
+    "family": "trend_strength_1d"
   },
   "AiHypothesis38274e8e38": {
     "source_title": "LeviathanLevi Momentum",
     "adapter_file": "github_leviathanlevi-binanceus-crypto-trading-bot_crypto-spot.md",
     "hypothesis": true,
-    "family": "crossover_momentum_1h"
+    "family": "trend_strength_1h"
   },
   "AiHypothesis8626759f55": {
     "source_title": "ryaniamfs Momentum",
@@ -61,7 +61,7 @@
     "source_title": "mefai-dev Momentum",
     "adapter_file": "github_mefai-dev-mefai-autotrade_crypto-spot.md",
     "hypothesis": true,
-    "family": "ema_rsi_momentum_5m"
+    "family": "trend_strength_15m"
   },
   "AiHypothesis06c4e1f3ce": {
     "source_title": "An1g Momentum",
@@ -73,6 +73,588 @@
     "source_title": "Clementinemaster Momentum",
     "adapter_file": "github_clementinemaster-forex-prime-trx-mt4-strategy_crypto-spot.md",
     "hypothesis": true,
-    "family": "breakout_momentum_5m"
+    "family": "trend_strength_4h"
+  },
+  "AiHypothesis6ede885b4d": {
+    "source_title": "Crypto Momentum Strategy",
+    "adapter_file": "arxiv_1802-03708v8_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_1d"
+  },
+  "AiHypothesisb6921a9ae4": {
+    "source_title": "AnandChowdhary",
+    "adapter_file": "github_anandchowdhary-priced-in_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_4h"
+  },
+  "AiHypothesis81852d7f55": {
+    "source_title": "stockalgo Trend",
+    "adapter_file": "github_stockalgo-stolgo_crypto-spot.md",
+    "hypothesis": true,
+    "family": "factor_momentum_1h"
+  },
+  "AiHypothesis5179dc02d5": {
+    "source_title": "Retro-Actions: Learning 'Close' by Time-Reversing 'Open' Videos",
+    "adapter_file": "arxiv_1909-09422v1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesisab583542c5": {
+    "source_title": "Can we imitate the principal investor's behavior to learn option price?",
+    "adapter_file": "arxiv_2105-11376v2_crypto-spot.md",
+    "hypothesis": true,
+    "family": "volatility_regime_4h"
+  },
+  "AiHypothesise2194a955c": {
+    "source_title": "The Spectrum of Price Action: Extreme Trends to Extreme Trading Ranges",
+    "adapter_file": "crossref_10-1002-9781119202592-ch1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_momentum_1h"
+  },
+  "AiHypothesis67a9b0debd": {
+    "source_title": "The momentum trading strategy",
+    "adapter_file": "crossref_10-1007-springerreference-2909_crypto-spot.md",
+    "hypothesis": true,
+    "family": "balanced_momentum_1h"
+  },
+  "AiHypothesis2b65ec2bed": {
+    "source_title": "Momentum - Reversal Strategy",
+    "adapter_file": "crossref_10-2139-ssrn-1852585_crypto-spot.md",
+    "hypothesis": true,
+    "family": "factor_momentum_1h"
+  },
+  "AiHypothesis783e356191": {
+    "source_title": "Physical Approach to Price Momentum and Its Application to Momentum Strategy",
+    "adapter_file": "crossref_10-2139-ssrn-2128946_crypto-spot.md",
+    "hypothesis": true,
+    "family": "volatility_regime_1h"
+  },
+  "AiHypothesisbdffacf77f": {
+    "source_title": "Trump's Crypto Reserve Expansion: A Shift in U.S. Digital Asset Strategy",
+    "adapter_file": "crossref_10-2139-ssrn-5161818_crypto-spot.md",
+    "hypothesis": true,
+    "family": "volatility_regime_1h"
+  },
+  "AiHypothesis498b11beb5": {
+    "source_title": "The Lazy Man's Momentum Strategy",
+    "adapter_file": "crossref_10-2139-ssrn-5644131_crypto-spot.md",
+    "hypothesis": true,
+    "family": "balanced_momentum_1h"
+  },
+  "AiHypothesis25eb40c1ed": {
+    "source_title": "Crypto Momentum Strategy",
+    "adapter_file": "crossref_10-2139-ssrn-5920642_crypto-spot.md",
+    "hypothesis": true,
+    "family": "balanced_momentum_1h"
+  },
+  "AiHypothesisc3e121ad98": {
+    "source_title": "Structural Admissibility of Asset Price Trajectories: A Theoretical Price-Only Effective Action Framework",
+    "adapter_file": "crossref_10-2139-ssrn-6079386_crypto-spot.md",
+    "hypothesis": true,
+    "family": "volatility_regime_1h"
+  },
+  "AiHypothesis72e1628c74": {
+    "source_title": "Comparison of Cross-sectional Momentum Strategy and Time-Series Momentum Strategy",
+    "adapter_file": "crossref_10-54097-p2fhxd83_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_1d"
+  },
+  "AiHypothesisde03de772c": {
+    "source_title": "Crypto Momentum Strategy",
+    "adapter_file": "crossref_10-64628-ab-3ufnp9pg3_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_1d"
+  },
+  "AiHypothesis2f858d2552": {
+    "source_title": "akurgat",
+    "adapter_file": "github_akurgat-automating-technical-analysis_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesis76d61cc650": {
+    "source_title": "copmorty",
+    "adapter_file": "github_copmorty-price-action-orders_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_4h"
+  },
+  "AiHypothesis803b69ccc7": {
+    "source_title": "hipcityreg Momentum",
+    "adapter_file": "github_hipcityreg-auto-trading-platform_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_momentum_1h"
+  },
+  "AiHypothesis949361f7e1": {
+    "source_title": "meeran2021",
+    "adapter_file": "github_meeran2021-open-range-breakout_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_15m"
+  },
+  "AiHypothesis9c673c6a1c": {
+    "source_title": "melkerliljegren",
+    "adapter_file": "github_melkerliljegren-opening-range-breakout_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_5m"
+  },
+  "AiHypothesis0748b01d88": {
+    "source_title": "Shobhit3244",
+    "adapter_file": "github_shobhit3244-orb-trading-strategy_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_momentum_1h"
+  },
+  "AiHypothesisf27c8af24d": {
+    "source_title": "Optimal Limit-versus-Market Order Slicing Under a VWAP Benchmark - Continuous Case",
+    "adapter_file": "crossref_10-2139-ssrn-2318896_crypto-spot.md",
+    "hypothesis": true,
+    "family": "volatility_regime_1h"
+  },
+  "AiHypothesis887d8815f3": {
+    "source_title": "VWAP-Based Regime Classification Model for Intraday Price Dynamics",
+    "adapter_file": "crossref_10-2139-ssrn-6438039_crypto-spot.md",
+    "hypothesis": true,
+    "family": "volatility_regime_1h"
+  },
+  "AiHypothesis50ecd3e1ca": {
+    "source_title": "Optimal VWAP Tracking",
+    "adapter_file": "crossref_10-2139-ssrn-2333916_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_momentum_1h"
+  },
+  "AiHypothesis59b4fd369f": {
+    "source_title": "Mean Variance Optimal VWAP Trading",
+    "adapter_file": "crossref_10-2139-ssrn-1803858_crypto-spot.md",
+    "hypothesis": true,
+    "family": "volatility_regime_1h"
+  },
+  "AiHypothesis174aaca56e": {
+    "source_title": "Deep Learning for VWAP Execution in Crypto Markets: Beyond the Volume Curve",
+    "adapter_file": "crossref_10-2139-ssrn-5150912_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesis694c6f9ad1": {
+    "source_title": "felalmeida",
+    "adapter_file": "github_felalmeida-metatrader-vwap_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_15m"
+  },
+  "AiHypothesis3c1192880a": {
+    "source_title": "VWAP Execution with Signature-Enhanced Transformers: A Multi-Asset Learning Approach",
+    "adapter_file": "arxiv_2503-02680v1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesis55ce7cd5c8": {
+    "source_title": "Deep Learning for VWAP Execution in Crypto Markets: Beyond the Volume Curve",
+    "adapter_file": "arxiv_2502-13722v2_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_15m"
+  },
+  "AiHypothesisea573ad83a": {
+    "source_title": "Recurrent Neural Networks for Dynamic VWAP Execution: Adaptive Trading Strategies with Temporal Kolmogorov-Arnold Networks",
+    "adapter_file": "arxiv_2502-18177v1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "volatility_regime_5m"
+  },
+  "AiHypothesis6d0a883c92": {
+    "source_title": "Hierarchical Deep Reinforcement Learning for VWAP Strategy Optimization",
+    "adapter_file": "arxiv_2212-14670v1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_15m"
+  },
+  "AiHypothesis6b79206c8e": {
+    "source_title": "Momentum Exhaustion and Fair Value Reversion: An ADX-conditioned VWAP Strategy in FX Markets",
+    "adapter_file": "crossref_10-2139-ssrn-6454659_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesiscdc37ae3a1": {
+    "source_title": "Efficacy of a Mean Reversion Trading Strategy Using True Strength Index",
+    "adapter_file": "crossref_10-2139-ssrn-4708400_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesis7113f72f22": {
+    "source_title": "Gold Silver Pair Trading -Mean Reversion Strategy Using Machine Learning",
+    "adapter_file": "crossref_10-22541-au-176523297-71168178-v1_crypto-futures.md",
+    "hypothesis": true,
+    "family": "trend_strength_1h"
+  },
+  "AiHypothesis8e564a1a0c": {
+    "source_title": "Gold Silver Pair Trading -Mean Reversion Strategy Using Machine Learning",
+    "adapter_file": "crossref_10-2139-ssrn-5710242_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_1h"
+  },
+  "AiHypothesisc848c0c2fd": {
+    "source_title": "Mean-Reversion Risk APT and the Mean-Reversion Risk CAPM",
+    "adapter_file": "crossref_10-2139-ssrn-4402402_crypto-spot.md",
+    "hypothesis": true,
+    "family": "factor_momentum_1h"
+  },
+  "AiHypothesis8baf8dc4c3": {
+    "source_title": "Profitability of an Integrated Mean Reversion-Momentum Strategy: Free Lunch or Compensation for Risk?",
+    "adapter_file": "crossref_10-2139-ssrn-1914204_crypto-spot.md",
+    "hypothesis": true,
+    "family": "factor_momentum_1h"
+  },
+  "AiHypothesis656abed9bb": {
+    "source_title": "Max-quant-bit Mean Reversion",
+    "adapter_file": "github_max-quant-bit-001-vwap-mean-reversion-research_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesis85dd48f38f": {
+    "source_title": "Mean Reversion and Beta-Zero Targeting: A Long-Short Equity Trading Strategy",
+    "adapter_file": "crossref_10-2139-ssrn-3124271_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesisf7975fc7ba": {
+    "source_title": "0zean Mean Reversion",
+    "adapter_file": "github_0zean-vwap-mean-reversion_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesisee91dcc8a4": {
+    "source_title": "chj29",
+    "adapter_file": "github_chj29-personal-berkshire-trading-system_crypto-futures.md",
+    "hypothesis": true,
+    "family": "mean_reversion_5m"
+  },
+  "AiHypothesisabbec17e2f": {
+    "source_title": "ojeology",
+    "adapter_file": "github_ojeology-mean-reversion-vwap-lab_crypto-spot.md",
+    "hypothesis": true,
+    "family": "volatility_regime_1h"
+  },
+  "AiHypothesisbd7c6f7610": {
+    "source_title": "ssystems27 Mean Reversion",
+    "adapter_file": "github_ssystems27-demo-crypto-trading_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesise211e2d1eb": {
+    "source_title": "spagnola-analytics Mean Reversion",
+    "adapter_file": "github_spagnola-analytics-intraday-strategies_crypto-futures.md",
+    "hypothesis": true,
+    "family": "breakout_1h"
+  },
+  "AiHypothesisb210c2d095": {
+    "source_title": "Melek390 Momentum",
+    "adapter_file": "github_melek390-telegram-trading-bot-for-ftmo-prop-firm-challlenge_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_1h"
+  },
+  "AiHypothesis039a15bf1a": {
+    "source_title": "Taking by storm: a breakout strategy",
+    "adapter_file": "crossref_10-1108-02756660710732620_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_momentum_1h"
+  },
+  "AiHypothesis866284e313": {
+    "source_title": "Evaluating the Performance of a Donchian Channel Breakout Strategy with ATR-Based Risk Management",
+    "adapter_file": "crossref_10-2139-ssrn-6272239_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_momentum_1d"
+  },
+  "AiHypothesis4125d5a1e3": {
+    "source_title": "Breakout multinationals: emerging-market multinationals in global value chains",
+    "adapter_file": "crossref_10-4337-9781782545019-00013_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_momentum_1h"
+  },
+  "AiHypothesis64537ee540": {
+    "source_title": "Technical Trading Strategy: Inside Days Breakout Play",
+    "adapter_file": "crossref_10-1002-9781119212997-ch12_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_momentum_1h"
+  },
+  "AiHypothesisd7a58e04b3": {
+    "source_title": "Technical Trading Strategy: 20\u2010Day Breakout Trade",
+    "adapter_file": "crossref_10-1002-9781119212997-ch14_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_momentum_1h"
+  },
+  "AiHypothesis9dd75e1437": {
+    "source_title": "UJI EFEKTIVITAS METODE BREAKOUT SUPPORT RESISTANCE UNTUK PROBABILITAS PADA FOREIGN EXCHANGE MARKET (FOREX)",
+    "adapter_file": "crossref_10-36985-saj8g536_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_1h"
+  },
+  "AiHypothesisf1b260c7c9": {
+    "source_title": "FinLLM-B: When Large Language Models Meet Financial Breakout Trading",
+    "adapter_file": "arxiv_2402-07536v2_crypto-futures.md",
+    "hypothesis": true,
+    "family": "breakout_4h"
+  },
+  "AiHypothesisd99c5d142a": {
+    "source_title": "Crypto Momentum Strategy",
+    "adapter_file": "crossref_10-54254-2754-1169-18-20230053_crypto-futures.md",
+    "hypothesis": true,
+    "family": "breakout_1d"
+  },
+  "AiHypothesise446a59036": {
+    "source_title": "NikolayPetrenko03",
+    "adapter_file": "github_nikolaypetrenko03-crypto-risk-mitigation-strategy_crypto-spot.md",
+    "hypothesis": true,
+    "family": "volatility_regime_1h"
+  },
+  "AiHypothesis6008cb0d6c": {
+    "source_title": "steliosk98",
+    "adapter_file": "github_steliosk98-crypto-ai-swing-bot_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesisb43547535a": {
+    "source_title": "Ngxaki",
+    "adapter_file": "github_ngxaki-trading-signal-indicator_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_1h"
+  },
+  "AiHypothesisc21a7faa0a": {
+    "source_title": "Arthur-plg",
+    "adapter_file": "github_arthur-plg-crypto-swing-bot_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_4h"
+  },
+  "AiHypothesis13bf99bfd2": {
+    "source_title": "simeunchul",
+    "adapter_file": "github_simeunchul-crypto_crypto-futures.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesis1bba0dc4ae": {
+    "source_title": "Tmoukabary Momentum",
+    "adapter_file": "github_tmoukabary-crypto-strategy-simulator_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_momentum_1h"
+  },
+  "AiHypothesis9fcb3fabad": {
+    "source_title": "qaisharnabil",
+    "adapter_file": "github_qaisharnabil-crypto-trading-ai-agent_crypto-spot.md",
+    "hypothesis": true,
+    "family": "balanced_momentum_1h"
+  },
+  "AiHypothesis27c11d4a03": {
+    "source_title": "gurkinator",
+    "adapter_file": "github_gurkinator-ai-crypto-tradingbot_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesis2afb0a9df6": {
+    "source_title": "dcsan",
+    "adapter_file": "github_dcsan-swingbot_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesisdc5e324522": {
+    "source_title": "DTennant",
+    "adapter_file": "github_dtennant-crypto-swing-backtest_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1d"
+  },
+  "AiHypothesisc51b3cee93": {
+    "source_title": "ashish2704",
+    "adapter_file": "github_ashish2704-scalping-day-trading-strategy_crypto-spot.md",
+    "hypothesis": true,
+    "family": "volatility_regime_15m"
+  },
+  "AiHypothesis69c256df3f": {
+    "source_title": "alpacahq",
+    "adapter_file": "github_alpacahq-example-scalping_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_5m"
+  },
+  "AiHypothesis472cb90169": {
+    "source_title": "NulvexN",
+    "adapter_file": "github_nulvexn-forex-scalping-ea-mt5-mt1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_5m"
+  },
+  "AiHypothesis51afc467b9": {
+    "source_title": "alpacahq",
+    "adapter_file": "github_alpacahq-gamma-scalping_crypto-spot.md",
+    "hypothesis": true,
+    "family": "volatility_regime_1h"
+  },
+  "AiHypothesis38d5ce1065": {
+    "source_title": "anthonyli01",
+    "adapter_file": "github_anthonyli01-statistical-arbitrage-pairs-trading-strategy_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_1h"
+  },
+  "AiHypothesis8a8fc04b5e": {
+    "source_title": "Constructing the Best Trading Strategy: A New General Framework",
+    "adapter_file": "crossref_10-2139-ssrn-1896146_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesis9833377202": {
+    "source_title": "quantrocket-codeload",
+    "adapter_file": "github_quantrocket-codeload-pairs-pipeline_crypto-spot.md",
+    "hypothesis": true,
+    "family": "volatility_regime_1h"
+  },
+  "AiHypothesisabca86dde7": {
+    "source_title": "zameyer1",
+    "adapter_file": "github_zameyer1-evolutionary-trading-strategies_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_1h"
+  },
+  "AiHypothesis027a067e1b": {
+    "source_title": "losingloonies",
+    "adapter_file": "github_losingloonies-best-macd-trading-validation_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_1d"
+  },
+  "AiHypothesisd81ad8e4c0": {
+    "source_title": "xljiang",
+    "adapter_file": "github_xljiang-stock-market-simulator_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_1h"
+  },
+  "AiHypothesis259302ee7f": {
+    "source_title": "hanshaze",
+    "adapter_file": "github_hanshaze-solana-sniper-copy-mev-trading-bot_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_5m"
+  },
+  "AiHypothesisbe9e7af8ae": {
+    "source_title": "Statistical arbitrage in multi-pair trading strategy based on graph clustering algorithms in US equities market",
+    "adapter_file": "arxiv_2406-10695v1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1d"
+  },
+  "AiHypothesisf7b25a87d3": {
+    "source_title": "shenyichen105",
+    "adapter_file": "github_shenyichen105-deep-reinforcement-learning-in-stock-trading_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesisf43457d09a": {
+    "source_title": "HFTHaidra",
+    "adapter_file": "github_hfthaidra-deep-reinforcement-learning-for-automated-stock-trading-strategy_crypto-spot.md",
+    "hypothesis": true,
+    "family": "volatility_regime_1d"
+  },
+  "AiHypothesis8909642914": {
+    "source_title": "A Comparative Evaluation of Predominant Deep Learning Quantified Stock Trading Strategies",
+    "adapter_file": "arxiv_2103-15304v2_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_1d"
+  },
+  "AiHypothesis86d8373208": {
+    "source_title": "Constructing the best trading strategy: a new general framework",
+    "adapter_file": "crossref_10-21314-jois-2011-076_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_1d"
+  },
+  "AiHypothesis35397023f3": {
+    "source_title": "DDPG based on multi-scale strokes for financial time series trading strategy",
+    "adapter_file": "arxiv_2207-10071v1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_1d"
+  },
+  "AiHypothesis299cc44c77": {
+    "source_title": "Deep Reinforcement Learning for Automated Stock Trading: An Ensemble Strategy",
+    "adapter_file": "arxiv_2511-12120v1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_1d"
+  },
+  "AiHypothesis87775dbac1": {
+    "source_title": "Evolving intraday foreign exchange trading strategies utilizing multiple instruments price series",
+    "adapter_file": "arxiv_1411-2153v1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_5m"
+  },
+  "AiHypothesisadee3b4612": {
+    "source_title": "The Importance of Low Latency to Order Book Imbalance Trading Strategies",
+    "adapter_file": "arxiv_2006-08682v1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_5m"
+  },
+  "AiHypothesisc578e59751": {
+    "source_title": "Trading Strategies of a Leveraged ETF in a Continuous Double Auction Market Using an Agent-Based Simulation",
+    "adapter_file": "arxiv_2010-13036v1_crypto-futures.md",
+    "hypothesis": true,
+    "family": "volatility_regime_1d"
+  },
+  "AiHypothesisa380e3e053": {
+    "source_title": "Constructing the Best Trading Strategy: A New General Framework",
+    "adapter_file": "arxiv_1108-0837v1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_1d"
+  },
+  "AiHypothesisfc7acd6164": {
+    "source_title": "Evaluation of Dynamic Cointegration-Based Pairs Trading Strategy in the Cryptocurrency Market",
+    "adapter_file": "arxiv_2109-10662v1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesis3f6c52412a": {
+    "source_title": "ocignis",
+    "adapter_file": "github_ocignis-ocignis-bot_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1h"
+  },
+  "AiHypothesis87ddb0d4e4": {
+    "source_title": "Swing-Trading Risk Magnitude",
+    "adapter_file": "crossref_10-2139-ssrn-4574554_crypto-spot.md",
+    "hypothesis": true,
+    "family": "volatility_regime_1h"
+  },
+  "AiHypothesis1d7677be07": {
+    "source_title": "Exploration of Algorithmic Trading Strategies for the Bitcoin Market",
+    "adapter_file": "arxiv_2110-14936v1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_1d"
+  },
+  "AiHypothesis1bb826fbaa": {
+    "source_title": "Long Short-Term Memory Pattern Recognition in Currency Trading",
+    "adapter_file": "arxiv_2403-18839v1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_1d"
+  },
+  "AiHypothesis25bc6e83a2": {
+    "source_title": "The microscopic relationships between triangular arbitrage and cross-currency correlations in a simple agent based model of foreign exchange markets",
+    "adapter_file": "arxiv_2002-02583v1_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_15m"
+  },
+  "AiHypothesis5d96521ddd": {
+    "source_title": "Eric991005",
+    "adapter_file": "github_eric991005-stockformer_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_1d"
+  },
+  "AiHypothesisf547edff39": {
+    "source_title": "abzdel",
+    "adapter_file": "github_abzdel-swing-trading-stock-bot_crypto-spot.md",
+    "hypothesis": true,
+    "family": "mean_reversion_1d"
+  },
+  "AiHypothesis43932fa899": {
+    "source_title": "Marginal Potential: Leverage Limitations in Swing Trading with Stock",
+    "adapter_file": "crossref_10-1057-9781137344113-5_crypto-spot.md",
+    "hypothesis": true,
+    "family": "volatility_regime_1d"
+  },
+  "AiHypothesis2c0c743805": {
+    "source_title": "mightomi",
+    "adapter_file": "github_mightomi-semiautomatic-trader_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_1h"
+  },
+  "AiHypothesis228efda595": {
+    "source_title": "cporter202",
+    "adapter_file": "github_cporter202-stock-market-signal-automation_crypto-spot.md",
+    "hypothesis": true,
+    "family": "breakout_5m"
+  },
+  "AiHypothesisc349b6b1e9": {
+    "source_title": "deshwalmahesh Momentum",
+    "adapter_file": "github_deshwalmahesh-nse-stock-scanner_crypto-spot.md",
+    "hypothesis": true,
+    "family": "trend_strength_1d"
   }
 }

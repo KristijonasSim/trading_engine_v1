@@ -37,4 +37,4 @@
 
 ## Automation
 
-- Result: AI proposed trend_strength rules: EMA 10/40, RSI entry > 58, exit < 42, stop-loss -7%, fixed $100 position, 1h. This is an independent test hypothesis, not a claim about the original author's exact rules.
+- Result: Source page could not be read; proposed trend_strength rules: EMA 3/39, RSI entry > 64, exit < 43, stop-loss -8%, fixed $100 position, 1h. Testing must judge it; it is not claimed as the original author's exact strategy.

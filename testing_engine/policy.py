@@ -4,6 +4,8 @@ from datetime import date
 
 
 BTC_PAIR = "BTC/USDT"
+MIN_PROFIT_FACTOR = 2.0
+MIN_TRADES_PER_DAY = 0.2
 ALLOWED_TIMEFRAMES = {
     "scalping": ("5m", "15m"),
     "day_trading": ("1h", "4h", "1d"),
@@ -33,4 +35,8 @@ def public_policy() -> dict[str, object]:
         "scalping_timeframes": list(ALLOWED_TIMEFRAMES["scalping"]),
         "day_trading_timeframes": list(ALLOWED_TIMEFRAMES["day_trading"]),
         "metrics": ["PF", "CAGR", "Max DD", "Trades/day"],
+        "promotion_rules": {
+            "min_profit_factor": MIN_PROFIT_FACTOR,
+            "min_trades_per_day": MIN_TRADES_PER_DAY,
+        },
     }

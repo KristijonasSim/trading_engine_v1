@@ -11,21 +11,21 @@ from freqtrade.strategy import IStrategy
 class AiHypothesis0db0917b6c(IStrategy):
     timeframe = "1h"
     can_short = False
-    startup_candle_count = 30
+    startup_candle_count = 29
     minimal_roi = {"0": 10.0}
     stoploss = -0.06
     use_exit_signal = True
 
     def populate_indicators(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
-        dataframe["ema_fast"] = ta.EMA(dataframe, timeperiod=6)
-        dataframe["ema_slow"] = ta.EMA(dataframe, timeperiod=30)
+        dataframe["ema_fast"] = ta.EMA(dataframe, timeperiod=3)
+        dataframe["ema_slow"] = ta.EMA(dataframe, timeperiod=29)
         dataframe["rsi"] = ta.RSI(dataframe, timeperiod=14)
         return dataframe
 
     def populate_entry_trend(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
-        dataframe.loc[(dataframe["ema_fast"] > dataframe["ema_slow"]) & (dataframe["rsi"] > 60) & (dataframe["volume"] > 0), "enter_long"] = 1
+        dataframe.loc[(dataframe["ema_fast"] > dataframe["ema_slow"]) & (dataframe["rsi"] > 64) & (dataframe["volume"] > 0), "enter_long"] = 1
         return dataframe
 
     def populate_exit_trend(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
-        dataframe.loc[(dataframe["ema_fast"] < dataframe["ema_slow"]) | (dataframe["rsi"] < 45), "exit_long"] = 1
+        dataframe.loc[(dataframe["ema_fast"] < dataframe["ema_slow"]) | (dataframe["rsi"] < 52), "exit_long"] = 1
         return dataframe

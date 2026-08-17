@@ -37,4 +37,4 @@
 
 ## Automation
 
-- Result: AI proposed breakout_momentum rules: EMA 6/30, RSI entry > 60, exit < 45, stop-loss -6%, fixed $100 position, 1h. This is an independent test hypothesis, not a claim about the original author's exact rules.
+- Result: Source page could not be read; proposed breakout_momentum rules: EMA 3/29, RSI entry > 64, exit < 52, stop-loss -6%, fixed $100 position, 1h. Testing must judge it; it is not claimed as the original author's exact strategy.

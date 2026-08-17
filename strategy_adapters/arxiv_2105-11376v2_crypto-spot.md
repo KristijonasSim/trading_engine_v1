@@ -2,9 +2,9 @@
 
 ## Status
 
-- Status: `duplicate_hypothesis`
+- Status: `ai_hypothesis`
 - Target: `crypto-spot`
-- Testing handoff: `archived`
+- Testing handoff: `ready`
 
 ## Original source
 
@@ -37,4 +37,4 @@
 
 ## Automation
 
-- Result: Not sent to Testing: it duplicates AI hypothesis AiHypothesis4702b4251f for the same 1h EMA/RSI rule family.
+- Result: Claude reviewed the public source; proposed volatility_regime rules: EMA 13/49, RSI entry > 61, exit < 46, stop-loss -5%, fixed $100 position, 4h. Testing must judge it; it is not claimed as the original author's exact strategy.

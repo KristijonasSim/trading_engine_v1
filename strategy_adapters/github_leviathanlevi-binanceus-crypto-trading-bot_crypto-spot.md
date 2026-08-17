@@ -37,4 +37,4 @@
 
 ## Automation
 
-- Result: AI proposed crossover_momentum rules: EMA 15/45, RSI entry > 54, exit < 46, stop-loss -8%, fixed $100 position, 1h. This is an independent test hypothesis, not a claim about the original author's exact rules.
+- Result: Claude reviewed the public source; proposed trend_strength rules: EMA 12/54, RSI entry > 55, exit < 43, stop-loss -7%, fixed $100 position, 1h. Testing must judge it; it is not claimed as the original author's exact strategy.
