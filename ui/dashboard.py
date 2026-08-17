@@ -10,6 +10,8 @@ from pathlib import Path
 from typing import Any
 
 from research_engine.collectors import classify_market
+from strategy_adapter.adapters import write_adapter
+from strategy_adapter.queue import load as load_queue
 
 
 def deleted_sources_path(project_root: Path) -> Path:
@@ -114,12 +116,36 @@ def read_cards(project_root: Path) -> list[dict[str, str]]:
     return cards
 
 
+def read_adapters(project_root: Path) -> list[dict[str, str]]:
+    adapters = []
+    for path in sorted((project_root / "strategy_adapters").glob("*.md")):
+        content = path.read_text(encoding="utf-8")
+        title = re.search(r"^# Strategy adapter: (.+)$", content, re.MULTILINE)
+        target = re.search(r"^- Target: `([^`]+)`", content, re.MULTILINE)
+        status = re.search(r"^- Status: `([^`]+)`", content, re.MULTILINE)
+        source = re.search(r"^- Link: (.+)$", content, re.MULTILINE)
+        market = re.search(r"^- Source market: `([^`]+)`", content, re.MULTILINE)
+        adapters.append({"file": path.name, "title": title.group(1) if title else path.stem, "target": target.group(1) if target else "unknown", "status": status.group(1) if status else "draft", "source_link": source.group(1) if source else "", "source_market": market.group(1) if market else "unknown"})
+    return adapters
+
+
+def create_adapter(project_root: Path, source: str, record_id: str, target: str) -> Path | None:
+    record = next((item for item in read_records(project_root) if item["source"] == source and item["id"] == record_id), None)
+    if record is None:
+        return None
+    record["short_title"] = display_title(record)
+    record["market"] = market_type(record)
+    return write_adapter(record, target, project_root / "strategy_adapters")
+
+
 def dashboard_data(project_root: Path) -> dict[str, Any]:
     records = read_records(project_root)
     for record in records:
         record["short_title"] = display_title(record)
         record["market"] = market_type(record)
     cards = read_cards(project_root)
+    adapters = read_adapters(project_root)
+    queue = load_queue(project_root)
     source_counts = Counter(record["source"] for record in records)
     testing_reports = list((project_root / "data" / "testing").glob("*.json"))
     return {
@@ -129,15 +155,13 @@ def dashboard_data(project_root: Path) -> dict[str, Any]:
             "source_counts": dict(sorted(source_counts.items())),
             "records": records[:25],
         },
-        "testing": {
-            "state": "not built",
-            "strategy_cards": len(cards),
-            "reports": len(testing_reports),
-        },
+        "adapter": {"state": "paused", "drafts": len(adapters), "queue": queue},
+        "testing": {"state": "not built", "strategy_cards": len(cards), "reports": len(testing_reports)},
         "bot": {
             "state": "not built",
             "live_strategies": 0,
             "open_positions": 0,
         },
         "strategy_cards": cards,
+        "adapters": adapters,
     }

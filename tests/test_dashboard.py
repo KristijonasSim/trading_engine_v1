@@ -24,6 +24,7 @@ class DashboardTests(unittest.TestCase):
             self.assertEqual(data["research"]["unique_sources"], 2)
             self.assertEqual(data["research"]["source_counts"], {"arxiv": 1, "github": 1})
             self.assertEqual(data["testing"]["strategy_cards"], 1)
+            self.assertEqual(data["adapter"]["drafts"], 0)
 
     def test_short_title_and_market_are_simple(self):
         record = {

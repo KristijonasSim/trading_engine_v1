@@ -32,7 +32,8 @@ function element(tag, className, text) {
 function render(data) {
   dashboard = data;
   document.querySelector("#source-total").textContent = `${data.research.unique_sources} source ideas`;
-  document.querySelector("#card-total").textContent = `${data.testing.strategy_cards} strategies ready`;
+  document.querySelector("#card-total").textContent = `${data.adapter.drafts} adapter drafts`;
+  document.querySelector("#test-total").textContent = `${data.testing.reports} test runs`;
   document.querySelector("#testing-copy").textContent = data.testing.reports
     ? `${data.testing.reports} saved reports. Testing engine is not built yet.`
     : "Not built yet. It cannot run strategies.";
@@ -73,7 +74,18 @@ function render(data) {
     const deleteButton = element("button", "danger", "Delete source");
     deleteButton.addEventListener("click", () => deleteSource(record.source, record.id));
     row.append(deleteButton);
+    const target = document.createElement("select");
+    target.innerHTML = '<option value="crypto-spot">Crypto spot</option><option value="crypto-futures">Crypto futures</option>';
+    row.append(target);
+    const adaptButton = element("button", "secondary", "Add to adapter queue");
+    adaptButton.addEventListener("click", () => queueAdapter(record.source, record.id, record.short_title, target.value));
+    row.append(adaptButton);
     records.append(row);
+  }
+  const adapters = document.querySelector("#adapters"); adapters.replaceChildren();
+  if (!data.adapters.length) adapters.append(element("p", "empty", "No adapter drafts yet."));
+  for (const adapter of data.adapters) {
+    const card = element("article", "card"); card.append(element("h3", "", adapter.title)); card.append(element("p", "small", `Target: ${adapter.target} · Status: ${adapter.status}`)); card.append(element("p", "small", adapter.file)); adapters.append(card);
   }
 }
 
@@ -97,6 +109,17 @@ async function deleteSource(source, id) {
   }
   message.textContent = "Source deleted. It will stay hidden in future searches.";
   render(result.dashboard);
+}
+
+async function createAdapter(source, id, target) {
+  const response = await fetch("/api/create-adapter", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({source, id, target})});
+  const result = await response.json();
+  if (!response.ok) { message.textContent = result.error; return; }
+  message.textContent = `Created ${result.created}`; render(result.dashboard);
+}
+async function queueAdapter(source, id, title, target) {
+  const response = await fetch("/api/queue-adapter", {method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({source,id,title,target})});
+  const result=await response.json(); if(!response.ok){message.textContent=result.error;return;} message.textContent="Added to Adapter queue."; render(result.dashboard);
 }
 
 document.querySelector("#search-form").addEventListener("submit", async (event) => {

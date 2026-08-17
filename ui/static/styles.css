@@ -8,9 +8,11 @@ h2 { margin: 5px 0 8px; letter-spacing: -.025em; }
 h3 { margin: 0 0 8px; }
 p { line-height: 1.5; color: #b5c2c7; }
 .eyebrow, .label { font-size: .73rem; font-weight: 700; letter-spacing: .13em; color: #6ce5cc; margin: 0; }
-.engine-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 24px; }
+.engine-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 24px; }
 .engine, .panel { border: 1px solid #2d383b; background: #171d20cc; border-radius: 16px; }
 .engine { min-height: 194px; padding: 22px; }
+.engine-link { color: inherit; text-decoration: none; cursor: pointer; }
+.engine-link:hover { transform: translateY(-2px); border-color: #6ce5cc; }
 .engine.active { border-color: #53cbb5; background: linear-gradient(130deg, #1b3939, #171d20); }
 .badge, .count, .source, .market { display: inline-block; border-radius: 999px; padding: 4px 9px; background: #1f6159; color: #cafff5; font-size: .78rem; font-weight: 700; }
 .badge.muted { background: #30393c; color: #bbc4c6; }
@@ -41,4 +43,7 @@ button.danger { background: transparent; border-color: #8d4a4f; color: #ffbbc0; 
 .market.other { background: #3a4346; color: #d0d8da; }
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
 .empty { margin: 0; padding: 16px; border: 1px dashed #3a484b; border-radius: 12px; }
+.back, .source-link { color: #6ce5cc; text-decoration: none; font-weight: 700; }
+.back { display: inline-block; margin-top: 8px; }
+.source-link { display: inline-block; margin-top: 8px; font-size: .9rem; }
 @media (max-width: 760px) { .engine-grid, form { grid-template-columns: 1fr; } .section-heading { display: block; } main { padding: 32px 16px; } }

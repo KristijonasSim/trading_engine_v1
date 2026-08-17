@@ -12,7 +12,8 @@ from urllib.parse import urlparse
 
 from research_engine.collectors import COLLECTORS, classify_market, expand_query, is_strategy_source, new_result_file, search
 
-from .dashboard import dashboard_data, delete_source
+from .dashboard import create_adapter, dashboard_data, delete_source
+from strategy_adapter.queue import add as add_to_queue
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 STATIC_DIR = Path(__file__).resolve().parent / "static"
@@ -39,7 +40,7 @@ class DashboardHandler(SimpleHTTPRequestHandler):
         super().do_GET()
 
     def do_POST(self) -> None:
-        if urlparse(self.path).path not in {"/api/search", "/api/delete-source"}:
+        if urlparse(self.path).path not in {"/api/search", "/api/delete-source", "/api/create-adapter", "/api/queue-adapter"}:
             self.send_error(HTTPStatus.NOT_FOUND)
             return
         try:
@@ -50,8 +51,11 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             return
         if urlparse(self.path).path == "/api/search":
             self.handle_search(payload)
-        else:
+        elif urlparse(self.path).path == "/api/delete-source":
             self.handle_delete_source(payload)
+        elif urlparse(self.path).path == "/api/create-adapter":
+            self.handle_create_adapter(payload)
+        else: self.handle_queue_adapter(payload)
 
     def handle_search(self, payload: dict) -> None:
         query = str(payload.get("query", "")).strip()
@@ -104,6 +108,23 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             self.send_json({"error": "Source and ID are required."}, HTTPStatus.BAD_REQUEST)
             return
         delete_source(PROJECT_ROOT, source, record_id)
+        self.send_json({"dashboard": dashboard_data(PROJECT_ROOT)})
+
+    def handle_create_adapter(self, payload: dict) -> None:
+        target = str(payload.get("target", ""))
+        if target not in {"crypto-spot", "crypto-futures"}:
+            self.send_json({"error": "Choose crypto spot or crypto futures."}, HTTPStatus.BAD_REQUEST)
+            return
+        path = create_adapter(PROJECT_ROOT, str(payload.get("source", "")), str(payload.get("id", "")), target)
+        if path is None:
+            self.send_json({"error": "Source not found."}, HTTPStatus.NOT_FOUND)
+            return
+        self.send_json({"created": str(path.relative_to(PROJECT_ROOT)), "dashboard": dashboard_data(PROJECT_ROOT)})
+
+    def handle_queue_adapter(self, payload: dict) -> None:
+        source, record_id, title, target = (str(payload.get(k, "")) for k in ("source", "id", "title", "target"))
+        if target not in {"crypto-spot", "crypto-futures"}: self.send_json({"error":"Choose a target."}, HTTPStatus.BAD_REQUEST); return
+        add_to_queue(PROJECT_ROOT, source, record_id, title, target)
         self.send_json({"dashboard": dashboard_data(PROJECT_ROOT)})
 
     def log_message(self, format: str, *args) -> None:
