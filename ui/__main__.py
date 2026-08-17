@@ -1,0 +1,129 @@
+"""Run the local dashboard at http://127.0.0.1:8000."""
+
+from __future__ import annotations
+
+import argparse
+import json
+from datetime import UTC, datetime
+from http import HTTPStatus
+from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
+from pathlib import Path
+from urllib.parse import urlparse
+
+from research_engine.collectors import COLLECTORS, classify_market, expand_query, is_strategy_source, new_result_file, search
+
+from .dashboard import dashboard_data, delete_source
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+STATIC_DIR = Path(__file__).resolve().parent / "static"
+
+
+class DashboardHandler(SimpleHTTPRequestHandler):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, directory=str(STATIC_DIR), **kwargs)
+
+    def send_json(self, payload: object, status: int = HTTPStatus.OK) -> None:
+        body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+        self.send_response(status)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
+
+    def do_GET(self) -> None:
+        if urlparse(self.path).path == "/api/dashboard":
+            self.send_json(dashboard_data(PROJECT_ROOT))
+            return
+        if self.path == "/":
+            self.path = "/index.html"
+        super().do_GET()
+
+    def do_POST(self) -> None:
+        if urlparse(self.path).path not in {"/api/search", "/api/delete-source"}:
+            self.send_error(HTTPStatus.NOT_FOUND)
+            return
+        try:
+            size = int(self.headers.get("Content-Length", "0"))
+            payload = json.loads(self.rfile.read(size))
+        except (ValueError, json.JSONDecodeError):
+            self.send_json({"error": "Invalid JSON."}, HTTPStatus.BAD_REQUEST)
+            return
+        if urlparse(self.path).path == "/api/search":
+            self.handle_search(payload)
+        else:
+            self.handle_delete_source(payload)
+
+    def handle_search(self, payload: dict) -> None:
+        query = str(payload.get("query", "")).strip()
+        search_query = expand_query(query)
+        source = str(payload.get("source", "all"))
+        market = str(payload.get("market", "all"))
+        try:
+            limit = int(payload.get("limit", 5))
+        except (TypeError, ValueError):
+            limit = 0
+        if not query or source not in {*COLLECTORS, "all"} or market not in {"all", "crypto", "stocks", "futures", "forex"} or not 1 <= limit <= 20:
+            self.send_json({"error": "Use a query, valid source and market, and limit from 1 to 20."}, HTTPStatus.BAD_REQUEST)
+            return
+        sources = list(COLLECTORS) if source == "all" else [source]
+        records = []
+        errors = []
+        for source_name in sources:
+            try:
+                records.extend(
+                    record
+                    for record in search(source_name, search_query, limit)
+                    if is_strategy_source(record, search_query)
+                    and (market == "all" or classify_market(record) == market)
+                )
+            except Exception as error:
+                errors.append(f"{source_name}: {error}")
+        if not records:
+            scope = "all markets" if market == "all" else market
+            self.send_json(
+                {
+                    "error": f"No {scope} strategy sources found. Try Everything if you want ideas from every market.",
+                    "details": errors,
+                },
+                HTTPStatus.BAD_GATEWAY,
+            )
+            return
+        output_dir = PROJECT_ROOT / "data" / "research"
+        output_dir.mkdir(parents=True, exist_ok=True)
+        output_path = output_dir / new_result_file(query, source)
+        output_path.write_text(
+            json.dumps({"query": query, "search_query": search_query, "market": market, "created_at": datetime.now(UTC).isoformat(), "records": records}, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        self.send_json({"saved": str(output_path.relative_to(PROJECT_ROOT)), "search_query": search_query, "errors": errors, "dashboard": dashboard_data(PROJECT_ROOT)})
+
+    def handle_delete_source(self, payload: dict) -> None:
+        source = str(payload.get("source", ""))
+        record_id = str(payload.get("id", ""))
+        if not source or not record_id:
+            self.send_json({"error": "Source and ID are required."}, HTTPStatus.BAD_REQUEST)
+            return
+        delete_source(PROJECT_ROOT, source, record_id)
+        self.send_json({"dashboard": dashboard_data(PROJECT_ROOT)})
+
+    def log_message(self, format: str, *args) -> None:
+        print(f"Dashboard: {format % args}")
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Run the local trading-engine dashboard.")
+    parser.add_argument("--port", type=int, default=8000)
+    args = parser.parse_args()
+    server = ThreadingHTTPServer(("127.0.0.1", args.port), DashboardHandler)
+    print(f"Dashboard running at http://127.0.0.1:{args.port}")
+    print("Press Ctrl+C to stop it.")
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        print("\nDashboard stopped.")
+    finally:
+        server.server_close()
+
+
+if __name__ == "__main__":
+    main()
